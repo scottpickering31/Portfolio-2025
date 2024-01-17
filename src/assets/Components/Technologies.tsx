@@ -1,5 +1,7 @@
-import { LightModeCurrentIcons } from "../Data/LightModeIconData.tsx";
-import { DarkModeCurrentIcons } from "../Data/DarkModeIconData.tsx";
+import {
+  DarkModeCurrentIcons,
+  LightModeCurrentIcons,
+} from "../Data/DarkModeIconData.tsx";
 
 interface TechnologiesProps {
   darkMode: boolean;
@@ -11,7 +13,7 @@ function Technologies({ darkMode }: TechnologiesProps) {
   const currentTechnologies = Object.keys(CurrentIcons).map((key) => {
     const icon = CurrentIcons[key];
     return (
-      <div className="col text-white" key={key}>
+      <div className="col" key={key}>
         {icon.icon}
       </div>
     );
@@ -20,7 +22,7 @@ function Technologies({ darkMode }: TechnologiesProps) {
   return (
     <div className="container text-center">
       <h1 style={{ color: darkMode ? "white" : "black" }}>My Tech Stack</h1>
-      <div className="row row-cols-4">{currentTechnologies}</div>
+      <div className="row row-cols-4 text-white">{currentTechnologies}</div>
     </div>
   );
 }
