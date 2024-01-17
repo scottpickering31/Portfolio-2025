@@ -1,6 +1,6 @@
-function ProjectCard({ darkMode }) {
+function ProjectCard({ darkMode, projectData }) {
   return (
-    <div className="container d-flex justify-content-center align-items-center">
+    <div className="container d-flex justify-content-center align-items-center mb-5">
       <div className="card mb-3">
         <div className="row g-0">
           <div
@@ -8,7 +8,7 @@ function ProjectCard({ darkMode }) {
             style={{ backgroundColor: darkMode ? "black" : "white" }}
           >
             <img
-              src="https://picsum.photos/200/300"
+              src={projectData.image}
               className="img-fluid rounded-start"
               alt="..."
             />
@@ -21,22 +21,42 @@ function ProjectCard({ darkMode }) {
             }}
           >
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p className="card-text">
-                <small style={{ color: darkMode ? "white" : "gray" }}>
-                  Last updated 3 mins ago
-                </small>
-              </p>
+              <h5 className="card-title">{projectData.name}</h5>
+              <p className="card-text">{projectData.description}</p>
+              <h6 className="card-title">Technologies Used</h6>
+              <p className="card-text">{projectData.technologies}</p>
             </div>
             <div className="btn-group text-center">
-              <button className="btn btn-primary">View Project</button>
-              <button className="btn btn-primary">Source Code</button>
-              <button className="btn btn-primary">Read Me</button>
+              <button className="btn btn-primary">
+                <a
+                  href={projectData.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white text-decoration-none"
+                >
+                  View Project
+                </a>
+              </button>
+              <button className="btn btn-primary">
+                <a
+                  href={projectData.githubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white text-decoration-none"
+                >
+                  Source Code
+                </a>
+              </button>
+              <button className="btn btn-primary">
+                <a
+                  href={projectData.readme}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white text-decoration-none"
+                >
+                  Read Me
+                </a>
+              </button>
             </div>
           </div>
         </div>
