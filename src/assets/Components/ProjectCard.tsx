@@ -1,4 +1,26 @@
-function ProjectCard({ darkMode, projectData }) {
+import Lottie from "react-lottie";
+
+interface ProjectCardProps {
+  darkMode: boolean;
+  projectData: {
+    description: string;
+    technologies: string[];
+    githubLink: string;
+    liveLink: string;
+    readme: string;
+    image: string;
+    name: string;
+    id: number;
+  };
+  animationOptions?: any;
+}
+
+function ProjectCard({
+  darkMode,
+  projectData,
+  animationOptionsMice,
+  animationOptionsAstronautCoder,
+}: ProjectCardProps) {
   return (
     <div className="container d-flex justify-content-center align-items-center mb-5">
       <div className="card mb-3">
@@ -61,6 +83,12 @@ function ProjectCard({ darkMode, projectData }) {
           </div>
         </div>
       </div>
+      {darkMode && animationOptionsMice && (
+        <Lottie options={animationOptionsMice} />
+      )}
+      {darkMode && animationOptionsAstronautCoder && (
+        <Lottie options={animationOptionsAstronautCoder} />
+      )}
     </div>
   );
 }

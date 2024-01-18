@@ -17,7 +17,7 @@ function App() {
       className="App"
       style={{ backgroundColor: darkMode ? "black" : "white" }}
     >
-      <Header toggleDarkMode={toggleDarkMode} />
+      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <Technologies darkMode={darkMode} />
       <FutureTechnologies darkMode={darkMode} />
       <ProjectContainer darkMode={darkMode} />

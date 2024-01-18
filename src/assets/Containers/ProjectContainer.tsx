@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectCard from "../Components/ProjectCard";
+import MoonMice from "../../../public/Lotties/MoonMice.json";
+import AstronautCoder from "../../../public/Lotties/AstronautCoder.json";
 
 interface Project {
   darkMode: boolean;
@@ -39,10 +41,43 @@ const projectData = {
 };
 
 function ProjectContainer({ darkMode }: Project) {
+  const [animationState, setAnimationState] = useState({
+    isStopped: true,
+    isPaused: true,
+  });
+
+  const animationOptionsMice = {
+    loop: true,
+    autoplay: animationState.isStopped,
+    animationData: darkMode ? MoonMice : MoonMice,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const animationOptionsAstronautCoder = {
+    loop: true,
+    autoplay: animationState.isStopped,
+    animationData: darkMode ? AstronautCoder : AstronautCoder,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div>
-      <ProjectCard darkMode={darkMode} projectData={projectData.projectOne} />
-      <ProjectCard darkMode={darkMode} projectData={projectData.projectTwo} />
+      <ProjectCard
+        darkMode={darkMode}
+        projectData={projectData.projectOne}
+        animationOptionsMice={darkMode ? animationOptionsMice : undefined}
+      />
+      <ProjectCard
+        darkMode={darkMode}
+        projectData={projectData.projectTwo}
+        animationOptionsAstronautCoder={
+          darkMode ? animationOptionsAstronautCoder : undefined
+        }
+      />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectThree} />
     </div>
   );
