@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectCard from "../Components/ProjectCard";
 import MoonMice from "../../../public/Lotties/MoonMice.json";
 import AstronautCoder from "../../../public/Lotties/AstronautCoder.json";
 import Alien from "../../../public/Lotties/Alien.json";
+import DogSunbather from "../../../public/Lotties/DogSunbather.json";
+import IceCream from "../../../public/Lotties/IceCream.json";
+import Surfer from "../../../public/Lotties/Surfer.json";
 
 interface Project {
   darkMode: boolean;
@@ -47,40 +50,51 @@ function ProjectContainer({ darkMode }: Project) {
     isPaused: true,
   });
 
-  const generateAnimationOptions = (animationData, darkMode) => ({
+  const generateAnimationOptions = (
+    darkModeAnimationData,
+    lightModeAnimationData,
+    darkMode,
+  ) => ({
     loop: true,
     autoplay: animationState.isStopped,
-    animationData: darkMode ? animationData : animationData,
+    animationData: darkMode ? darkModeAnimationData : lightModeAnimationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   });
 
-  const animationOptionsMice = generateAnimationOptions(MoonMice, darkMode);
-  const animationOptionsAstronautCoder = generateAnimationOptions(
-    AstronautCoder,
+  const animationOptionsDogSunbather = generateAnimationOptions(
+    MoonMice,
+    DogSunbather,
     darkMode,
   );
-  const animationOptionsAlien = generateAnimationOptions(Alien, darkMode);
+  const animationOptionsIceCream = generateAnimationOptions(
+    AstronautCoder,
+    IceCream,
+    darkMode,
+  );
+  const animationOptionsSurfer = generateAnimationOptions(
+    Alien,
+    Surfer,
+    darkMode,
+  );
 
   return (
     <div>
       <ProjectCard
         darkMode={darkMode}
         projectData={projectData.projectOne}
-        animationOptionsMice={darkMode ? animationOptionsMice : undefined}
+        animationOptions={animationOptionsDogSunbather}
       />
       <ProjectCard
         darkMode={darkMode}
         projectData={projectData.projectTwo}
-        animationOptionsAstronautCoder={
-          darkMode ? animationOptionsAstronautCoder : undefined
-        }
+        animationOptions={animationOptionsIceCream}
       />
       <ProjectCard
         darkMode={darkMode}
         projectData={projectData.projectThree}
-        animationOptionsAlien={darkMode ? animationOptionsAlien : undefined}
+        animationOptions={animationOptionsSurfer}
       />
     </div>
   );

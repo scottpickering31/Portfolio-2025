@@ -12,15 +12,16 @@ interface ProjectCardProps {
     name: string;
     id: number;
   };
-  animationOptions?: any;
+  animationOptions: {
+    darkModeAnimation: any;
+    lightModeAnimation: any;
+  };
 }
 
 function ProjectCard({
   darkMode,
   projectData,
-  animationOptionsMice,
-  animationOptionsAstronautCoder,
-  animationOptionsAlien,
+  animationOptions,
 }: ProjectCardProps) {
   return (
     <div className="container d-flex justify-content-center align-items-center mb-5">
@@ -84,15 +85,7 @@ function ProjectCard({
           </div>
         </div>
       </div>
-      {darkMode && animationOptionsMice && (
-        <Lottie options={animationOptionsMice} />
-      )}
-      {darkMode && animationOptionsAstronautCoder && (
-        <Lottie options={animationOptionsAstronautCoder} />
-      )}
-      {darkMode && animationOptionsAlien && (
-        <Lottie options={animationOptionsAlien} />
-      )}
+      <Lottie options={animationOptions} className="lottie-animation" />
     </div>
   );
 }

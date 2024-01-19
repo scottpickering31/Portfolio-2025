@@ -1,0 +1,9 @@
+.navbar-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1000;
+  width: auto;
+  height: 15%;
+}
