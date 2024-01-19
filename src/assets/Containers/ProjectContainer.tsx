@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProjectCard from "../Components/ProjectCard";
 import MoonMice from "../../../public/Lotties/MoonMice.json";
 import AstronautCoder from "../../../public/Lotties/AstronautCoder.json";
+import Alien from "../../../public/Lotties/Alien.json";
 
 interface Project {
   darkMode: boolean;
@@ -46,23 +47,21 @@ function ProjectContainer({ darkMode }: Project) {
     isPaused: true,
   });
 
-  const animationOptionsMice = {
+  const generateAnimationOptions = (animationData, darkMode) => ({
     loop: true,
     autoplay: animationState.isStopped,
-    animationData: darkMode ? MoonMice : MoonMice,
+    animationData: darkMode ? animationData : animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
-  };
+  });
 
-  const animationOptionsAstronautCoder = {
-    loop: true,
-    autoplay: animationState.isStopped,
-    animationData: darkMode ? AstronautCoder : AstronautCoder,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  const animationOptionsMice = generateAnimationOptions(MoonMice, darkMode);
+  const animationOptionsAstronautCoder = generateAnimationOptions(
+    AstronautCoder,
+    darkMode,
+  );
+  const animationOptionsAlien = generateAnimationOptions(Alien, darkMode);
 
   return (
     <div>
@@ -78,7 +77,11 @@ function ProjectContainer({ darkMode }: Project) {
           darkMode ? animationOptionsAstronautCoder : undefined
         }
       />
-      <ProjectCard darkMode={darkMode} projectData={projectData.projectThree} />
+      <ProjectCard
+        darkMode={darkMode}
+        projectData={projectData.projectThree}
+        animationOptionsAlien={darkMode ? animationOptionsAlien : undefined}
+      />
     </div>
   );
 }

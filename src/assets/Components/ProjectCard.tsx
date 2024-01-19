@@ -20,6 +20,7 @@ function ProjectCard({
   projectData,
   animationOptionsMice,
   animationOptionsAstronautCoder,
+  animationOptionsAlien,
 }: ProjectCardProps) {
   return (
     <div className="container d-flex justify-content-center align-items-center mb-5">
@@ -88,6 +89,9 @@ function ProjectCard({
       )}
       {darkMode && animationOptionsAstronautCoder && (
         <Lottie options={animationOptionsAstronautCoder} />
+      )}
+      {darkMode && animationOptionsAlien && (
+        <Lottie options={animationOptionsAlien} />
       )}
     </div>
   );

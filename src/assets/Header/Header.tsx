@@ -30,17 +30,17 @@ function Header({ toggleDarkMode, darkMode }) {
   return (
     <div className="container text-center">
       <div className="col">
-        <div
-          style={{ backgroundColor: darkMode ? "black" : "white" }}
-          onClick={handleBackgroundClick}
-        >
+        <div onClick={handleBackgroundClick}>
           <Lottie
             options={animationOptions}
             isStopped={animationState.isStopped}
             isPaused={animationState.isPaused}
           />
         </div>
-        <div className="col mb-5">
+        <div
+          className="col mb-5"
+          style={{ color: darkMode ? "white" : "black" }}
+        >
           <img src="https://picsum.photos/200/300" alt="Profile" />
         </div>
       </div>
