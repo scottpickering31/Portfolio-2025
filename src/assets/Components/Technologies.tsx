@@ -2,19 +2,19 @@ import {
   DarkModeCurrentIcons,
   LightModeCurrentIcons,
 } from "../Data/DarkModeIconData.tsx";
-import Lottie from "react-lottie";
-import { useState } from "react";
-import SpaceMan from "../../../public/Lotties/SpaceManScreens.json";
+// import Lottie from "react-lottie";
+// import { useState } from "react";
+// import SpaceMan from "../../../public/Lotties/SpaceManScreens.json";
 
 interface TechnologiesProps {
   darkMode: boolean;
 }
 
 function Technologies({ darkMode }: TechnologiesProps) {
-  const [animationState, setAnimationState] = useState({
-    isStopped: true,
-    isPaused: true,
-  });
+  // const [animationState, setAnimationState] = useState({
+  //   isStopped: true,
+  //   isPaused: true,
+  // });
 
   const CurrentIcons = darkMode ? DarkModeCurrentIcons : LightModeCurrentIcons;
 
@@ -27,14 +27,14 @@ function Technologies({ darkMode }: TechnologiesProps) {
     );
   });
 
-  const animationOptionsSpaceMan = {
-    loop: true,
-    autoplay: animationState.isStopped,
-    animationData: darkMode ? SpaceMan : SpaceMan,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const animationOptionsSpaceMan = {
+  //   loop: true,
+  //   autoplay: animationState.isStopped,
+  //   animationData: darkMode ? SpaceMan : SpaceMan,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
   return (
     <div className="container text-center">
@@ -44,9 +44,9 @@ function Technologies({ darkMode }: TechnologiesProps) {
       <div className="row row-cols-4 text-white mb-5">
         {currentTechnologies}
       </div>
-      <div>
+      {/* <div>
         <Lottie options={animationOptionsSpaceMan} />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -20,10 +20,11 @@ function Technologies({ darkMode }: TechnologiesProps) {
   });
 
   return (
-    <div className="container text-center mb-5">
-      <h1 style={{ color: darkMode ? "white" : "black" }} className="mb-5">
-        Technologies I am learning in 2024
-      </h1>
+    <div
+      className="container text-center mb-5"
+      style={{ color: darkMode ? "white" : "black" }}
+    >
+      <h1 className="mb-5">Technologies I am learning in 2024</h1>
       <div className="row row-cols-5 text-white">{currentTechnologies}</div>
     </div>
   );
