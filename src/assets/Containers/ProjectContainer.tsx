@@ -6,7 +6,9 @@ import Alien from "../../../public/Lotties/Alien.json";
 import DogSunbather from "../../../public/Lotties/DogSunbather.json";
 import IceCream from "../../../public/Lotties/IceCream.json";
 import Surfer from "../../../public/Lotties/Surfer.json";
-
+import CarPickerForm from "../../../public/images/CarPickerForm.png";
+import MovieFinder from "../../../public/images/movie-finder.jpg";
+import Scottify from "../../../public/images/scottify-app-image.jpg";
 interface Project {
   darkMode: boolean;
 }
@@ -18,8 +20,8 @@ const projectData = {
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
-    image: "https://picsum.photos/200/300",
-    name: "Project Name 1",
+    image: CarPickerForm,
+    name: "Elite Drives",
     id: 1,
   },
   projectTwo: {
@@ -28,8 +30,8 @@ const projectData = {
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
-    image: "https://picsum.photos/200/300",
-    name: "Project Name 2",
+    image: Scottify,
+    name: "Scottify",
     id: 2,
   },
   projectThree: {
@@ -38,8 +40,8 @@ const projectData = {
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
-    image: "https://picsum.photos/200/300",
-    name: "Project Name 3",
+    image: MovieFinder,
+    name: "Movie Finder",
     id: 3,
   },
 };
@@ -53,7 +55,7 @@ function ProjectContainer({ darkMode }: Project) {
   const generateAnimationOptions = (
     darkModeAnimationData,
     lightModeAnimationData,
-    darkMode,
+    darkMode
   ) => ({
     loop: true,
     autoplay: animationState.isStopped,
@@ -66,17 +68,17 @@ function ProjectContainer({ darkMode }: Project) {
   const animationOptionsDogSunbather = generateAnimationOptions(
     MoonMice,
     DogSunbather,
-    darkMode,
+    darkMode
   );
   const animationOptionsIceCream = generateAnimationOptions(
     AstronautCoder,
     IceCream,
-    darkMode,
+    darkMode
   );
   const animationOptionsSurfer = generateAnimationOptions(
     Alien,
     Surfer,
-    darkMode,
+    darkMode
   );
 
   return (

@@ -26,7 +26,7 @@ function ProjectCard({
   return (
     <div className="container d-flex justify-content-center align-items-center mb-5">
       <div className="card mb-3">
-        <div className="row g-0">
+        <div className="row g-0 rounded">
           <div
             className="col-md-4"
             style={{ backgroundColor: darkMode ? "black" : "white" }}
