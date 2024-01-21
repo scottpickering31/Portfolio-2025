@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProjectCard from "../Components/ProjectCard";
+import ProjectCard from "../Components/Cards/ProjectCard";
 import MoonMice from "../../../public/Lotties/MoonMice.json";
 import AstronautCoder from "../../../public/Lotties/AstronautCoder.json";
 import Alien from "../../../public/Lotties/Alien.json";
