@@ -1,5 +1,3 @@
-// App.jsx
-
 import { useState } from "react";
 import Lottie from "react-lottie";
 import Header from "../src/assets/Header/Header";

@@ -9,7 +9,7 @@ function NavigationMenu({ toggleDarkMode, darkMode }) {
     isStopped: true,
     isPaused: true,
   });
-  const [isOpen, setIsOpen] = useState(false);
+  const [toggleHamburger, setToggleHamburger] = useState(false);
 
   const animationOptions = {
     loop: false,
@@ -29,34 +29,16 @@ function NavigationMenu({ toggleDarkMode, darkMode }) {
     });
   };
 
-  const handleNavIconClick = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <nav className="navbar fixed-top bg-body-tertiary">
+    <nav className="navbar fixed-top">
       <div className="container-fluid">
-        <div
-          onClick={handleBackgroundClick}
-          style={{ height: "15%", width: "15%" }}
-        >
-          <div style={{ height: "75px" }}>
+        <div style={{ height: "15%", width: "15%" }}>
+          <div style={{ height: "75px" }} onClick={handleBackgroundClick}>
             <Lottie
               options={animationOptions}
               isStopped={animationState.isStopped}
               isPaused={animationState.isPaused}
             />
-          </div>
-        </div>
-        <div
-          className={`nav-item ${isOpen ? "open" : ""}`}
-          id="nav-icon1"
-          onClick={handleNavIconClick}
-        >
-          <div className="nav-icon1">
-            <span></span>
-            <span></span>
-            <span></span>
           </div>
         </div>
       </div>
