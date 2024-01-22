@@ -1,14 +1,7 @@
-import { useState } from "react";
 import ProjectCard from "../Components/Cards/ProjectCard";
-import MoonMice from "../../../public/Lotties/MoonMice.json";
-import AstronautCoder from "../../../public/Lotties/AstronautCoder.json";
-import Alien from "../../../public/Lotties/Alien.json";
-import DogSunbather from "../../../public/Lotties/DogSunbather.json";
-import IceCream from "../../../public/Lotties/IceCream.json";
-import Surfer from "../../../public/Lotties/Surfer.json";
-import CarPickerForm from "../../../public/images/CarPickerForm.png";
-import MovieFinder from "../../../public/images/movie-finder.jpg";
-import Scottify from "../../../public/images/scottify-app-image.jpg";
+import CarPickerForm from "../../../public/Images/CarPickerForm.png";
+import MovieFinder from "../../../public/Images/movie-finder.jpg";
+import Scottify from "../../../public/Images/scottify-app-image.jpg";
 interface Project {
   darkMode: boolean;
 }
@@ -47,57 +40,11 @@ const projectData = {
 };
 
 function ProjectContainer({ darkMode }: Project) {
-  const [animationState, setAnimationState] = useState({
-    isStopped: true,
-    isPaused: true,
-  });
-
-  const generateAnimationOptions = (
-    darkModeAnimationData,
-    lightModeAnimationData,
-    darkMode
-  ) => ({
-    loop: true,
-    autoplay: animationState.isStopped,
-    animationData: darkMode ? darkModeAnimationData : lightModeAnimationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  });
-
-  const animationOptionsDogSunbather = generateAnimationOptions(
-    MoonMice,
-    DogSunbather,
-    darkMode
-  );
-  const animationOptionsIceCream = generateAnimationOptions(
-    AstronautCoder,
-    IceCream,
-    darkMode
-  );
-  const animationOptionsSurfer = generateAnimationOptions(
-    Alien,
-    Surfer,
-    darkMode
-  );
-
   return (
     <div>
-      <ProjectCard
-        darkMode={darkMode}
-        projectData={projectData.projectOne}
-        animationOptions={animationOptionsDogSunbather}
-      />
-      <ProjectCard
-        darkMode={darkMode}
-        projectData={projectData.projectTwo}
-        animationOptions={animationOptionsIceCream}
-      />
-      <ProjectCard
-        darkMode={darkMode}
-        projectData={projectData.projectThree}
-        animationOptions={animationOptionsSurfer}
-      />
+      <ProjectCard darkMode={darkMode} projectData={projectData.projectOne} />
+      <ProjectCard darkMode={darkMode} projectData={projectData.projectTwo} />
+      <ProjectCard darkMode={darkMode} projectData={projectData.projectThree} />
     </div>
   );
 }

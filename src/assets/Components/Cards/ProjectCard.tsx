@@ -1,5 +1,3 @@
-import Lottie from "react-lottie";
-
 interface ProjectCardProps {
   darkMode: boolean;
   projectData: {
@@ -12,25 +10,14 @@ interface ProjectCardProps {
     name: string;
     id: number;
   };
-  animationOptions: {
-    darkModeAnimation: any;
-    lightModeAnimation: any;
-  };
 }
 
-function ProjectCard({
-  darkMode,
-  projectData,
-  animationOptions,
-}: ProjectCardProps) {
+function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
   return (
-    <div className="container d-flex justify-content-center align-items-center mb-5">
-      <div className="card mb-3">
-        <div className="row g-0 rounded">
-          <div
-            className="col-md-4"
-            style={{ backgroundColor: darkMode ? "black" : "white" }}
-          >
+    <div className="container mb-5 text-center ">
+      <div className="card mb-3 ">
+        <div className="col g-0 rounded ">
+          <div className="order-md-2 card-img-top mx-auto ">
             <img
               src={projectData.image}
               className="img-fluid rounded-start"
@@ -38,7 +25,7 @@ function ProjectCard({
             />
           </div>
           <div
-            className="col-md-8"
+            className="col text-center order-md-1 "
             style={{
               backgroundColor: darkMode ? "black" : "white",
               color: darkMode ? "white" : "black",
@@ -85,7 +72,6 @@ function ProjectCard({
           </div>
         </div>
       </div>
-      <Lottie options={animationOptions} className="lottie-animation" />
     </div>
   );
 }

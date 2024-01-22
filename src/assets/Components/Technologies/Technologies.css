@@ -1,4 +1,8 @@
-.icons {
-  font-size: 5em;
+.techIcons {
   cursor: pointer;
+}
+
+.techIcons i {
+  height: 500px;
+  width: 500px;
 }
