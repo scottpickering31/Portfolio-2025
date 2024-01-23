@@ -33,7 +33,7 @@ function Technologies({ darkMode }: TechnologiesProps) {
         placement="top"
         overlay={<Tooltip>{icon.tooltip}</Tooltip>}
       >
-        <div className="col rounded techIcons mb-5" key={key}>
+        <div className="col rounded techIcons border" key={key}>
           {icon.icon}
         </div>
       </OverlayTrigger>
@@ -41,11 +41,11 @@ function Technologies({ darkMode }: TechnologiesProps) {
   });
 
   return (
-    <div className="container text-center">
+    <div className="container text-center mb-5">
       <h1 className="mb-5 fs-1" style={{ color: darkMode ? "white" : "black" }}>
         My Tech Stack
       </h1>
-      <div className="row row-cols-4 text-white m-3 fs-1">
+      <div className="row row-cols-5 text-white" style={{ fontSize: "5rem" }}>
         {currentTechnologies}
       </div>
     </div>

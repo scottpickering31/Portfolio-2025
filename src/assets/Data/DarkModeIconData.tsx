@@ -84,11 +84,6 @@ export const DarkModeCurrentIcons: Icons = {
     icon: <i className="devicon-github-plain"></i>,
     tooltip: "Github",
   },
-  VSCode: {
-    alt: "VSCode Icon",
-    icon: <i className="devicon-vscode-plain"></i>,
-    tooltip: "VSCode",
-  },
 };
 
 export const LightModeCurrentIcons: Icons = {
@@ -166,11 +161,6 @@ export const LightModeCurrentIcons: Icons = {
     alt: "Github Icon",
     icon: <i className="devicon-github-plain colored"></i>,
     tooltip: "Github",
-  },
-  VSCode: {
-    alt: "VSCode Icon",
-    icon: <i className="devicon-vscode-plain colored"></i>,
-    tooltip: "VSCode",
   },
 };
 

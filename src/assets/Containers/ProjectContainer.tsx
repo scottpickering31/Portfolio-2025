@@ -6,6 +6,10 @@ import EliteDrivesMacbook from "../../../public/Images/Project-Images/EliteDrive
 import ScottifyIphone from "../../../public/Images/Project-Images/Scottify-Iphone-Mockup.png";
 import ScottifyIpad from "../../../public/Images/Project-Images/Scottify-Ipad-Mockup.png";
 import ScottifyMacbook from "../../../public/Images/Project-Images/Scottify-Macbook-Mockup.png";
+import {
+  DarkModeCurrentIcons,
+  LightModeCurrentIcons,
+} from "../Data/DarkModeIconData";
 interface Project {
   darkMode: boolean;
 }
@@ -13,8 +17,40 @@ interface Project {
 const projectData = {
   projectOne: {
     h1title: "Projects",
-    description: "This is a description 1",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    description:
+      "Built using Vite, React, Redux and Tailwind-CSS and utilising libraries such as react-calendar and react-google-maps, Elite Drives is a supercar rental website that offers a variety of cars and services for a given period of time.",
+    technologyImages: [
+      LightModeCurrentIcons.HTML5.icon,
+      LightModeCurrentIcons.CSS3.icon,
+      LightModeCurrentIcons.Typescript.icon,
+      LightModeCurrentIcons.React.icon,
+      LightModeCurrentIcons.Redux.icon,
+      LightModeCurrentIcons.TailwindCSS.icon,
+    ],
+    technologyToolTips: [
+      LightModeCurrentIcons.HTML5.tooltip,
+      LightModeCurrentIcons.CSS3.tooltip,
+      LightModeCurrentIcons.Typescript.tooltip,
+      LightModeCurrentIcons.React.tooltip,
+      LightModeCurrentIcons.Redux.tooltip,
+      LightModeCurrentIcons.TailwindCSS.tooltip,
+    ],
+    darkTechnologyImages: [
+      DarkModeCurrentIcons.HTML5.icon,
+      DarkModeCurrentIcons.CSS3.icon,
+      DarkModeCurrentIcons.Typescript.icon,
+      DarkModeCurrentIcons.React.icon,
+      DarkModeCurrentIcons.Redux.icon,
+      DarkModeCurrentIcons.TailwindCSS.icon,
+    ],
+    darkTechnologyToolTips: [
+      DarkModeCurrentIcons.HTML5.tooltip,
+      DarkModeCurrentIcons.CSS3.tooltip,
+      DarkModeCurrentIcons.Typescript.tooltip,
+      DarkModeCurrentIcons.React.tooltip,
+      DarkModeCurrentIcons.Redux.tooltip,
+      DarkModeCurrentIcons.TailwindCSS.tooltip,
+    ],
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
@@ -26,8 +62,28 @@ const projectData = {
   },
   projectTwo: {
     h1title: null,
-    description: "This is a description 2",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    description:
+      "A Spotify Playlist creator app created using Javascript and React, by logging in to your spotify account through the Spotify API you can then create your very own titled playlist in no time!",
+    technologyImages: [
+      LightModeCurrentIcons.HTML5.icon,
+      LightModeCurrentIcons.CSS3.icon,
+      LightModeCurrentIcons.JavaScript.icon,
+    ],
+    technologyToolTips: [
+      LightModeCurrentIcons.HTML5.tooltip,
+      LightModeCurrentIcons.CSS3.tooltip,
+      LightModeCurrentIcons.JavaScript.tooltip,
+    ],
+    darkTechnologyImages: [
+      DarkModeCurrentIcons.HTML5.icon,
+      DarkModeCurrentIcons.CSS3.icon,
+      DarkModeCurrentIcons.JavaScript.icon,
+    ],
+    darkTechnologyToolTips: [
+      DarkModeCurrentIcons.HTML5.tooltip,
+      DarkModeCurrentIcons.CSS3.tooltip,
+      DarkModeCurrentIcons.JavaScript.tooltip,
+    ],
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
@@ -40,7 +96,26 @@ const projectData = {
   projectThree: {
     h1title: null,
     description: "This is a description 3",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologyImages: [
+      LightModeCurrentIcons.HTML5.icon,
+      LightModeCurrentIcons.CSS3.icon,
+      LightModeCurrentIcons.JavaScript.icon,
+    ],
+    technologyToolTips: [
+      LightModeCurrentIcons.HTML5.tooltip,
+      LightModeCurrentIcons.CSS3.tooltip,
+      LightModeCurrentIcons.JavaScript.tooltip,
+    ],
+    darkTechnologyImages: [
+      DarkModeCurrentIcons.HTML5.icon,
+      DarkModeCurrentIcons.CSS3.icon,
+      DarkModeCurrentIcons.JavaScript.icon,
+    ],
+    darkTechnologyToolTips: [
+      DarkModeCurrentIcons.HTML5.tooltip,
+      DarkModeCurrentIcons.CSS3.tooltip,
+      DarkModeCurrentIcons.JavaScript.tooltip,
+    ],
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",

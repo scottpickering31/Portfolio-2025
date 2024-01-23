@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./ProjectCard.css";
 
 interface ProjectCardProps {
@@ -43,7 +44,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
         color: darkMode ? "white" : "black",
       }}
     >
-      <h1>{projectData.h1title}</h1>
+      <h1 className="mb-5">{projectData.h1title || "Default Title"}</h1>
       <div className="card mb-3 border-4">
         <div
           className="col g-0 rounded"
@@ -81,15 +82,34 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
               />
             </div>
           </div>
-          <div className="col text-center order-md-1 ">
-            <div className="card-body">
+          <div className="container row text-center order-md-1 p-5">
+            <div className="col-4 card-body">
               <h5 className="card-title">{projectData.name}</h5>
               <p className="card-text">{projectData.description}</p>
-              <h6 className="card-title">Technologies Used</h6>
-              <p className="card-text">{projectData.technologies}</p>
             </div>
-            <div className="container text-center mb-5">
-              <button className="btn btn-primary mx-2">
+            <div className="col-4 card-body">
+              <h5 className="card-title">Technologies Used</h5>
+              <div className="d-flex flex-column">
+                {projectData.technologyImages.map((technology, index) => (
+                  <OverlayTrigger
+                    key={index}
+                    placement="top"
+                    overlay={
+                      <Tooltip>{projectData.technologyToolTips[index]}</Tooltip>
+                    }
+                  >
+                    <div
+                      className="m-2"
+                      title={projectData.technologyToolTips[index]}
+                    >
+                      {technology}
+                    </div>
+                  </OverlayTrigger>
+                ))}
+              </div>
+            </div>
+            <div className="col-4 text-center d-flex flex-column justify-content-center">
+              <button className="btn btn-primary mb-3">
                 <a
                   href={projectData.liveLink}
                   target="_blank"
@@ -99,7 +119,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
                   View Project
                 </a>
               </button>
-              <button className="btn btn-primary mx-2">
+              <button className="btn btn-primary mb-3">
                 <a
                   href={projectData.githubLink}
                   target="_blank"
@@ -109,7 +129,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
                   Source Code
                 </a>
               </button>
-              <button className="btn btn-primary mx-2">
+              <button className="btn btn-primary mb-3">
                 <a
                   href={projectData.readme}
                   target="_blank"

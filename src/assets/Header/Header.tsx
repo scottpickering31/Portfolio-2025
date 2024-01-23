@@ -7,10 +7,7 @@ function Header({ toggleDarkMode, darkMode }) {
       <div>
         <NavigationMenu toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       </div>
-      <div
-        className="col mb-5 mt-5"
-        style={{ color: darkMode ? "white" : "black" }}
-      >
+      <div className="col mb-5" style={{ color: darkMode ? "white" : "black" }}>
         <AboutMe />
       </div>
     </div>

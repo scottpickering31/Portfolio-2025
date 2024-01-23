@@ -32,15 +32,15 @@ function AboutMe() {
   };
 
   return (
-    <div className="row d-flex align-items-center justify-content-center p-10">
-      <div className="col-lg-5 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
+    <div className="row d-flex align-items-center justify-content-center">
+      <div className="col-6 col-lg-5 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
         <img
           src={AboutMeImage}
           alt="Profile"
           className="rounded-circle img-fluid"
         />
       </div>
-      <div className="col-lg-5 card border-3 p-3 col-md-12 fs-5 text-left order-lg-1 order-2 bg-light ">
+      <div className="col-6 col-lg-5 card border-3 col-md-12 fs-5 text-left order-lg-1 order-2 bg-light ">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -49,7 +49,7 @@ function AboutMe() {
               .typeString(`Hello, and welcome to my Portfolio!`)
               .pauseFor(1000)
               .typeString(
-                `<br><br>My Name is <strong>Scott Pickering</strong>, and i'm a Junior Full Stack Developer from <strong>Stevenage, Hertfordshire</strong>.`,
+                `<br><br>My Name is <strong>Scott Pickering</strong>, and i'm a Junior Full Stack Developer from <strong>Stevenage, Hertfordshire</strong>.`
               )
               .pauseFor(1000)
               .typeString(`<br><br>What would you like to view?`)
@@ -61,7 +61,7 @@ function AboutMe() {
           }}
         />
         <div>
-          <div className="mt-3 mb-3">{viewOptions && <AboutMeButtons />}</div>
+          <div className="mt-3 mb-3 ">{viewOptions && <AboutMeButtons />}</div>
           {viewOptions && (
             <LottieDisplay
               animationOptions={animationOptions}

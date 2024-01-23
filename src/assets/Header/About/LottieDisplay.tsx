@@ -4,10 +4,10 @@ import "./AboutMe.css";
 
 function LottieDisplay({ animationOptions, animationState, logoObject }) {
   return (
-    <div className="container d-flex justify-content-center align-items-center">
-      <div className="row AboutMeButtons">
+    <div className="container">
+      <div className="row mx-auto d-flex justify-content-center align-items-center">
         {Object.keys(logoObject).map((logoKey) => (
-          <div key={logoKey} className="col-4 ">
+          <div key={logoKey} className="col-3">
             <Lottie
               options={{
                 ...animationOptions,
