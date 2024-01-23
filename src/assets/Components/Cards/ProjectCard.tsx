@@ -44,7 +44,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
       }}
     >
       <h1>{projectData.h1title}</h1>
-      <div className="card mb-3 ">
+      <div className="card mb-3 border-4">
         <div
           className="col g-0 rounded"
           style={{

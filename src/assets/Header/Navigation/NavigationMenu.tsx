@@ -9,7 +9,6 @@ function NavigationMenu({ toggleDarkMode, darkMode }) {
     isStopped: true,
     isPaused: true,
   });
-  const [toggleHamburger, setToggleHamburger] = useState(false);
 
   const animationOptions = {
     loop: false,
@@ -30,10 +29,10 @@ function NavigationMenu({ toggleDarkMode, darkMode }) {
   };
 
   return (
-    <nav className="navbar fixed-top">
-      <div className="container-fluid">
-        <div style={{ height: "15%", width: "15%" }}>
-          <div style={{ height: "75px" }} onClick={handleBackgroundClick}>
+    <nav className="navbar-icon">
+      <div className="container-fluid d-flex justify-content-end">
+        <div className="LottieDisplay">
+          <div onClick={handleBackgroundClick}>
             <Lottie
               options={animationOptions}
               isStopped={animationState.isStopped}
