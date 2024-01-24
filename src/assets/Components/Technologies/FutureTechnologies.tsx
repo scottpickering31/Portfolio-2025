@@ -45,7 +45,10 @@ function Technologies({ darkMode }: TechnologiesProps) {
       style={{ color: darkMode ? "white" : "black" }}
     >
       <h1 className="mb-5">Technologies I am learning in 2024</h1>
-      <div className="row row-cols-5 text-white" style={{ fontSize: "5rem" }}>
+      <div
+        className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 text-white"
+        style={{ fontSize: "5rem" }}
+      >
         {currentTechnologies}
       </div>
     </div>

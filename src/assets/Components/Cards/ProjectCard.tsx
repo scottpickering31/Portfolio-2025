@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import ProjectDescription from "./ProjectDescription";
 import "./ProjectCard.css";
 
 interface ProjectCardProps {
@@ -23,6 +23,7 @@ interface ProjectCardProps {
 function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState("");
+  const carouselId = `carousel-${projectData.id}`;
 
   const handleImageClick = (image: string | null) => {
     if (image) {
@@ -38,107 +39,104 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
 
   return (
     <div
-      className="container mb-5 text-center"
+      className="mb-5 text-center"
       style={{
-        backgroundColor: darkMode ? "black" : "white",
+        backgroundColor: darkMode ? "black" : "#f5f5f5",
         color: darkMode ? "white" : "black",
       }}
     >
-      <h1 className="mb-5">{projectData.h1title || "Default Title"}</h1>
+      <h1 className="mb-5">{projectData.h1title}</h1>
       <div className="card mb-3 border-4">
         <div
-          className="col g-0 rounded"
+          className="g-0 rounded"
           style={{
             backgroundColor: darkMode ? "black" : "white",
             color: darkMode ? "white" : "black",
           }}
         >
-          <div className="row order-md-2 mx-auto">
-            <div className="col-md-3">
-              <img
-                src={projectData.iphone}
-                className="img-fluid rounded-start mockups"
-                style={{ height: "400px" }}
-                alt="iPhone"
-                onClick={() => handleImageClick(projectData.iphone)}
-              />
-            </div>
-            <div className="col-md-6">
-              <img
-                src={projectData.macbook}
-                style={{ height: "400px" }}
-                className="img-fluid rounded-start mockups"
-                alt="MacBook"
-                onClick={() => handleImageClick(projectData.macbook)}
-              />
-            </div>
-            <div className="col-md-3">
-              <img
-                src={projectData.ipad}
-                style={{ height: "400px" }}
-                className="img-fluid rounded-start mockups"
-                alt="iPad"
-                onClick={() => handleImageClick(projectData.ipad)}
-              />
-            </div>
-          </div>
-          <div className="container row text-center order-md-1 p-5">
-            <div className="col-4 card-body">
-              <h5 className="card-title">{projectData.name}</h5>
-              <p className="card-text">{projectData.description}</p>
-            </div>
-            <div className="col-4 card-body">
-              <h5 className="card-title">Technologies Used</h5>
-              <div className="d-flex flex-column">
-                {projectData.technologyImages.map((technology, index) => (
-                  <OverlayTrigger
-                    key={index}
-                    placement="top"
-                    overlay={
-                      <Tooltip>{projectData.technologyToolTips[index]}</Tooltip>
-                    }
-                  >
-                    <div
-                      className="m-2"
-                      title={projectData.technologyToolTips[index]}
-                    >
-                      {technology}
-                    </div>
-                  </OverlayTrigger>
-                ))}
+          <div className="row mx-auto">
+            <div className="col-12 col-md-6 d-flex justify-content-center">
+              <div
+                id={carouselId}
+                className="carousel slide"
+                data-bs-ride="true"
+              >
+                <div className="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    className="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div className="carousel-inner mockups ">
+                  <div className="carousel-item active">
+                    <img
+                      src={projectData.iphone}
+                      className="d-block iphoneMockup"
+                      alt="Iphone"
+                      onClick={() => handleImageClick(projectData.iphone)}
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src={projectData.ipad}
+                      className="d-block ipadMockup"
+                      alt="Ipad"
+                      onClick={() => handleImageClick(projectData.ipad)}
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src={projectData.macbook}
+                      className="d-block macbookMockup"
+                      alt="Macbook"
+                      onClick={() => handleImageClick(projectData.macbook)}
+                    />
+                  </div>
+                </div>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target={`#${carouselId}`}
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target={`#${carouselId}`}
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-            <div className="col-4 text-center d-flex flex-column justify-content-center">
-              <button className="btn btn-primary mb-3">
-                <a
-                  href={projectData.liveLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white text-decoration-none"
-                >
-                  View Project
-                </a>
-              </button>
-              <button className="btn btn-primary mb-3">
-                <a
-                  href={projectData.githubLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white text-decoration-none"
-                >
-                  Source Code
-                </a>
-              </button>
-              <button className="btn btn-primary mb-3">
-                <a
-                  href={projectData.readme}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white text-decoration-none"
-                >
-                  Read Me
-                </a>
-              </button>
+            <div className="col-12 col-md-6 d-flex justify-content-center">
+              <ProjectDescription projectData={projectData} />
             </div>
           </div>
         </div>
@@ -147,7 +145,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
         show={showModal}
         onHide={closeModal}
         centered
-        dialogClassName="modal-fullscreen"
+        dialogClassName="modal-fullscreen d-flex align-items-center justify-content-center"
       >
         <Modal.Body>
           <img
@@ -155,8 +153,8 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
             alt="Full Size"
             style={{
               objectFit: "contain",
-              height: "100%",
-              width: "100%",
+              maxHeight: "80vh",
+              maxWidth: "200%",
             }}
           />
         </Modal.Body>
