@@ -39,21 +39,15 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
 
   return (
     <div
-      className="mb-5 text-center"
+      className="container mb-5 text-center"
       style={{
-        backgroundColor: darkMode ? "black" : "#f5f5f5",
         color: darkMode ? "white" : "black",
+        backgroundColor: darkMode ? "transparent" : "white",
       }}
     >
       <h1 className="mb-5">{projectData.h1title}</h1>
-      <div className="card mb-3 border-4">
-        <div
-          className="g-0 rounded"
-          style={{
-            backgroundColor: darkMode ? "black" : "white",
-            color: darkMode ? "white" : "black",
-          }}
-        >
+      <div className="card mb-3 border-0 bg-transparent">
+        <div className="g-0 rounded">
           <div className="row mx-auto">
             <div className="col-12 col-md-6 d-flex justify-content-center">
               <div
@@ -136,7 +130,10 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
               </div>
             </div>
             <div className="col-12 col-md-6 d-flex justify-content-center">
-              <ProjectDescription projectData={projectData} />
+              <ProjectDescription
+                projectData={projectData}
+                darkMode={darkMode}
+              />
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ import LinkedInLogo from "../../../../public/Lotties/LinkedIn.json";
 import LottieDisplay from "./LottieDisplay";
 import "./AboutMe.css";
 
-function AboutMe() {
+function AboutMe({ setViewableArea, viewableArea }) {
   const [viewOptions, setViewOptions] = useState(false);
 
   const animationState = {
@@ -32,15 +32,15 @@ function AboutMe() {
   };
 
   return (
-    <div className="row d-flex align-items-center justify-content-center">
-      <div className="col-12 col-lg-5 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
+    <div className="row d-flex align-items-center justify-content-center px-1">
+      <div className="col-12 col-lg-6 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
         <img
           src={AboutMeImage}
           alt="Profile"
           className="rounded-circle img-fluid"
         />
       </div>
-      <div className="col-12 col-lg-5 card border-3 col-md-12 fs-5 text-left order-lg-1 order-2 bg-light ">
+      <div className="col-12 col-lg-6 card border-3 col-md-12 fs-5 text-left order-lg-1 order-2 bg-light py-5 mb-5 ">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -61,14 +61,14 @@ function AboutMe() {
           }}
         />
         <div>
-          <div className="mt-3 mb-3 ">{viewOptions && <AboutMeButtons />}</div>
-          {viewOptions && (
-            <LottieDisplay
-              animationOptions={animationOptions}
-              animationState={animationState}
-              logoObject={logoObject}
-            />
-          )}
+          <div className="mt-3">
+            {viewOptions && (
+              <AboutMeButtons
+                setViewableArea={setViewableArea}
+                viewableArea={viewableArea}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

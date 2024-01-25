@@ -9,6 +9,7 @@ import TwinkleStars from "../public/Lotties/TwinkleStars.json";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [viewableArea, setViewableArea] = useState<boolean>(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -41,11 +42,20 @@ function App() {
             <Lottie options={twinkleStarsOptions} />
           </div>
         )}
-        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-        <Technologies darkMode={darkMode} />
-        <FutureTechnologies darkMode={darkMode} />
-        <ProjectContainer darkMode={darkMode} />
-        <Footer />
+        <Header
+          toggleDarkMode={toggleDarkMode}
+          darkMode={darkMode}
+          setViewableArea={setViewableArea}
+          viewableArea={viewableArea}
+        />
+        {viewableArea && (
+          <div>
+            <Technologies darkMode={darkMode} />
+            <FutureTechnologies darkMode={darkMode} />
+            <ProjectContainer darkMode={darkMode} />
+            <Footer />
+          </div>
+        )}
       </div>
     </>
   );

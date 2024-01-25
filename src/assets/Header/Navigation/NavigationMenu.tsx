@@ -31,8 +31,8 @@ function NavigationMenu({ toggleDarkMode, darkMode }) {
   return (
     <nav className="navbar-icon navbar-expand-lg">
       <div className="container-fluid d-flex justify-content-end">
-        <div className="LottieDisplay">
-          <div onClick={handleBackgroundClick}>
+        <div>
+          <div onClick={handleBackgroundClick} className="lottieIcon">
             <Lottie
               options={animationOptions}
               isStopped={animationState.isStopped}

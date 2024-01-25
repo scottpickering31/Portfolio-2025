@@ -6,10 +6,7 @@ import EliteDrivesMacbook from "../../../public/Images/Project-Images/EliteDrive
 import ScottifyIphone from "../../../public/Images/Project-Images/Scottify-Iphone-Mockup.png";
 import ScottifyIpad from "../../../public/Images/Project-Images/Scottify-Ipad-Mockup.png";
 import ScottifyMacbook from "../../../public/Images/Project-Images/Scottify-Macbook-Mockup.png";
-import {
-  DarkModeCurrentIcons,
-  LightModeCurrentIcons,
-} from "../Data/DarkModeIconData";
+import { LightModeCurrentIcons } from "../Data/DarkModeIconData";
 interface Project {
   darkMode: boolean;
 }
@@ -35,22 +32,6 @@ const projectData = {
       LightModeCurrentIcons.Redux.tooltip,
       LightModeCurrentIcons.TailwindCSS.tooltip,
     ],
-    darkTechnologyImages: [
-      DarkModeCurrentIcons.HTML5.icon,
-      DarkModeCurrentIcons.CSS3.icon,
-      DarkModeCurrentIcons.Typescript.icon,
-      DarkModeCurrentIcons.React.icon,
-      DarkModeCurrentIcons.Redux.icon,
-      DarkModeCurrentIcons.TailwindCSS.icon,
-    ],
-    darkTechnologyToolTips: [
-      DarkModeCurrentIcons.HTML5.tooltip,
-      DarkModeCurrentIcons.CSS3.tooltip,
-      DarkModeCurrentIcons.Typescript.tooltip,
-      DarkModeCurrentIcons.React.tooltip,
-      DarkModeCurrentIcons.Redux.tooltip,
-      DarkModeCurrentIcons.TailwindCSS.tooltip,
-    ],
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
@@ -74,16 +55,6 @@ const projectData = {
       LightModeCurrentIcons.CSS3.tooltip,
       LightModeCurrentIcons.JavaScript.tooltip,
     ],
-    darkTechnologyImages: [
-      DarkModeCurrentIcons.HTML5.icon,
-      DarkModeCurrentIcons.CSS3.icon,
-      DarkModeCurrentIcons.JavaScript.icon,
-    ],
-    darkTechnologyToolTips: [
-      DarkModeCurrentIcons.HTML5.tooltip,
-      DarkModeCurrentIcons.CSS3.tooltip,
-      DarkModeCurrentIcons.JavaScript.tooltip,
-    ],
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
@@ -106,16 +77,6 @@ const projectData = {
       LightModeCurrentIcons.CSS3.tooltip,
       LightModeCurrentIcons.JavaScript.tooltip,
     ],
-    darkTechnologyImages: [
-      DarkModeCurrentIcons.HTML5.icon,
-      DarkModeCurrentIcons.CSS3.icon,
-      DarkModeCurrentIcons.JavaScript.icon,
-    ],
-    darkTechnologyToolTips: [
-      DarkModeCurrentIcons.HTML5.tooltip,
-      DarkModeCurrentIcons.CSS3.tooltip,
-      DarkModeCurrentIcons.JavaScript.tooltip,
-    ],
     githubLink: "https://github.com",
     liveLink: "https://github.com",
     readme: "https://github.com",
@@ -131,7 +92,13 @@ function ProjectContainer({ darkMode }: Project) {
   return (
     <div>
       <ProjectCard darkMode={darkMode} projectData={projectData.projectOne} />
+      <hr
+        style={{ border: "2px solid #ccc", width: "80%", margin: "20px auto" }}
+      />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectTwo} />
+      <hr
+        style={{ border: "2px solid #ccc", width: "80%", margin: "20px auto" }}
+      />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectThree} />
     </div>
   );
