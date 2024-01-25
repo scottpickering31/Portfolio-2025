@@ -1,4 +1,5 @@
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import "./ProjectCard.css";
 
 interface ProjectCardProps {
   darkMode: boolean;
@@ -17,19 +18,19 @@ interface ProjectCardProps {
   };
 }
 
-function ProjectDescription({ projectData }: ProjectCardProps) {
+function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
   return (
-    <div className="container row text-center order-md-1 p-1">
+    <div
+      className="container row text-center order-md-1 p-1"
+      style={{ color: darkMode ? "white" : "black" }}
+    >
       <div className="card-body">
         <h5 className="card-title">{projectData.name}</h5>
         <p className="card-text">{projectData.description}</p>
       </div>
       <div className="col card-body d-flex align-items-center flex-column">
         <h5 className="card-title">Technologies Used</h5>
-        <div
-          className="d-flex flex-row text-wrap justify-content-center"
-          style={{ fontSize: "3rem", width: "100%" }}
-        >
+        <div className="d-flex flex-row text-wrap justify-content-center techIcons">
           {projectData.technologyImages.map((technology, index) => (
             <OverlayTrigger
               key={index}
@@ -56,7 +57,7 @@ function ProjectDescription({ projectData }: ProjectCardProps) {
             rel="noreferrer"
             className="text-white text-decoration-none"
           >
-            View Project
+            VIEW PROJECT
           </a>
         </button>
         <button className="btn btn-primary mb-3">
@@ -66,7 +67,7 @@ function ProjectDescription({ projectData }: ProjectCardProps) {
             rel="noreferrer"
             className="text-white text-decoration-none"
           >
-            Source Code
+            SOURCE CODE
           </a>
         </button>
         <button className="btn btn-primary mb-3">
@@ -76,7 +77,7 @@ function ProjectDescription({ projectData }: ProjectCardProps) {
             rel="noreferrer"
             className="text-white text-decoration-none"
           >
-            Read Me
+            READ ME
           </a>
         </button>
       </div>
