@@ -30,7 +30,7 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
       </div>
       <div className="col card-body d-flex align-items-center flex-column">
         <h5 className="card-title">Technologies Used</h5>
-        <div className="d-flex flex-row text-wrap justify-content-center techIcons">
+        <div className="d-flex flex-row text-wrap justify-content-center">
           {projectData.technologyImages.map((technology, index) => (
             <OverlayTrigger
               key={index}
@@ -40,7 +40,7 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
               }
             >
               <div
-                className="m-2"
+                className="m-2 techIcons"
                 title={projectData.technologyToolTips[index]}
               >
                 {technology}

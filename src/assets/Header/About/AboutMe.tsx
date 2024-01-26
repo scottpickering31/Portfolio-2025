@@ -7,13 +7,17 @@ import Twitter from "../../../../public/Images/Logos/Twitter.png";
 import Typewriter from "typewriter-effect";
 import "./AboutMe.css";
 
-function AboutMe({ setViewableArea, viewableArea }) {
+function AboutMe({ setViewableArea, viewableArea, darkMode }) {
   const [fadeIn, setFadeIn] = useState("opacity-0");
 
   return (
     <div
       className="row d-flex justify-content-center py-5 px-1 headerborder"
-      style={{ height: "100%", margin: "0" }}
+      style={{
+        height: "100%",
+        margin: "0",
+        backgroundColor: darkMode ? "white" : "black",
+      }}
     >
       <div className="col-12 col-lg-5 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
         <img
@@ -23,8 +27,8 @@ function AboutMe({ setViewableArea, viewableArea }) {
         />
       </div>
       <div
-        className="col-12 col-lg-5 col-md-12 fs-5 text-left order-lg-1 order-2 mb-5 text-light"
-        style={{ height: "50vh" }}
+        className="col-12 col-lg-5 col-md-12 fs-5 text-left order-lg-1 order-2 mb-5"
+        style={{ height: "50vh", color: darkMode ? "black" : "white" }}
       >
         <Typewriter
           onInit={(typewriter) => {

@@ -1,23 +1,4 @@
-import { useState, useEffect } from "react";
-
 function AboutMeButtons({ setViewableArea }: AboutMeButtonsProps) {
-  const [buttonIndex, setButtonIndex] = useState(-1);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setButtonIndex((prevIndex) => {
-        if (prevIndex < 2) {
-          return prevIndex + 1;
-        } else {
-          clearInterval(interval);
-          return prevIndex;
-        }
-      });
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const renderButtons = () => {
     const buttons = ["My Projects", "Contact Me", "My Tech Stack"];
 
@@ -25,9 +6,7 @@ function AboutMeButtons({ setViewableArea }: AboutMeButtonsProps) {
       <button
         key={index}
         type="button"
-        className={`btn btn-primary m-2 fs-6 fw-bold ${
-          buttonIndex >= index ? "visible" : "hidden"
-        }`}
+        className={`btn btn-primary m-2 fs-6 fw-bold`}
         onClick={() => setViewableArea(true)}
       >
         {button}

@@ -29,19 +29,15 @@ function NavigationMenu({ toggleDarkMode, darkMode }) {
   };
 
   return (
-    <nav className="navbar-icon navbar-expand-lg fixed-top mb-5">
-      <div className="container-fluid d-flex justify-content-end">
-        <div>
-          <div onClick={handleBackgroundClick} className="lottieIcon">
-            <Lottie
-              options={animationOptions}
-              isStopped={animationState.isStopped}
-              isPaused={animationState.isPaused}
-            />
-          </div>
-        </div>
+    <div className="fixed-top mb-5">
+      <div onClick={handleBackgroundClick} className="lottieIcon">
+        <Lottie
+          options={animationOptions}
+          isStopped={animationState.isStopped}
+          isPaused={animationState.isPaused}
+        />
       </div>
-    </nav>
+    </div>
   );
 }
 

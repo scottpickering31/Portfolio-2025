@@ -16,6 +16,7 @@ function Header({
       <div className="text-center">
         <div className="col mb-5">
           <AboutMe
+            darkMode={darkMode}
             setViewableArea={setViewableArea}
             viewableArea={viewableArea}
           />

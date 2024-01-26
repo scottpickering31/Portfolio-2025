@@ -144,7 +144,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
         centered
         dialogClassName="modal-fullscreen"
       >
-        <Modal.Body className=" d-flex align-items-center justify-content-center">
+        <Modal.Body className="d-flex align-items-center justify-content-center">
           <img
             src={modalImage}
             alt="Full Size"

@@ -33,7 +33,7 @@ function Technologies({ darkMode }: TechnologiesProps) {
         overlay={<Tooltip>{icon.tooltip}</Tooltip>}
       >
         <div className="col border techIcons" key={key}>
-          {icon.icon}
+          <div className="icon-container">{icon.icon}</div>
         </div>
       </OverlayTrigger>
     );
