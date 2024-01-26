@@ -25,7 +25,7 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
       style={{ color: darkMode ? "white" : "black" }}
     >
       <div className="card-body">
-        <h5 className="card-title">{projectData.name}</h5>
+        <h2 className="card-title">{projectData.name}</h2>
         <p className="card-text">{projectData.description}</p>
       </div>
       <div className="col card-body d-flex align-items-center flex-column">
@@ -40,7 +40,7 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
               }
             >
               <div
-                className="m-2 "
+                className="m-2"
                 title={projectData.technologyToolTips[index]}
               >
                 {technology}

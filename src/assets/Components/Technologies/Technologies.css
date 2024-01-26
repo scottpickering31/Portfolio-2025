@@ -1,3 +1,21 @@
 .techIcons {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 320px) {
+  .techIcons > div {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .techIcons > div {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .techIcons > div {
+    font-size: 2.5rem;
+  }
+}

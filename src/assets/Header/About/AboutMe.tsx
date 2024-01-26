@@ -1,55 +1,39 @@
-// AboutMe.jsx
 import { useState } from "react";
 import AboutMeImage from "../../../../public/Images/AboutMe.jpeg";
 import AboutMeButtons from "../../Components/Buttons/AboutMeButtons";
+import Github from "../../../../public/Images/Logos/Github.png";
+import LinkedIn from "../../../../public/Images/Logos/LinkedIn.png";
+import Twitter from "../../../../public/Images/Logos/Twitter.png";
 import Typewriter from "typewriter-effect";
-import TwitterLogo from "../../../../public/Lotties/Twitter.json";
-import GithubLogo from "../../../../public/Lotties/Github.json";
-import LinkedInLogo from "../../../../public/Lotties/LinkedIn.json";
-import LottieDisplay from "./LottieDisplay";
-import "./AboutMe.css";
 
 function AboutMe({ setViewableArea, viewableArea }) {
   const [viewOptions, setViewOptions] = useState(false);
 
-  const animationState = {
-    isStopped: true,
-    isPaused: true,
-  };
-
-  const logoObject = {
-    TwitterLogo,
-    GithubLogo,
-    LinkedInLogo,
-  };
-
-  const animationOptions = {
-    loop: true,
-    autoplay: animationState.isStopped,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
-    <div className="row d-flex align-items-center justify-content-center px-1">
-      <div className="col-12 col-lg-6 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
+    <div
+      className="row d-flex justify-content-center py-5 px-1 headerborder bg-black"
+      style={{ height: "100%" }}
+    >
+      <div className="col-12 col-lg-5 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
         <img
           src={AboutMeImage}
           alt="Profile"
           className="rounded-circle img-fluid"
         />
       </div>
-      <div className="col-12 col-lg-6 card border-3 col-md-12 fs-5 text-left order-lg-1 order-2 bg-light py-5 mb-5 ">
+      <div
+        className="col-12 col-lg-5 col-md-12 fs-5 text-left order-lg-1 order-2 mb-5 text-light"
+        style={{ height: "50vh" }}
+      >
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .changeDelay(35)
+              .changeDelay(20)
               .changeDeleteSpeed(Infinity)
               .typeString(`Hello, and welcome to my Portfolio!`)
               .pauseFor(1000)
               .typeString(
-                `<br><br>My Name is <strong>Scott Pickering</strong>, and i'm a Junior Full Stack Developer from <strong>Stevenage, Hertfordshire</strong>.`,
+                `<br><br>My Name is <strong><span style="color: #ffae52;">Scott Pickering</span></strong>, and I'm a <span style="color: #ffae52;"><strong>Full Stack Developer</strong></span> from <span style="color: #ffae52;"><strong>Hitchin, Hertfordshire</strong></span>.`,
               )
               .pauseFor(1000)
               .typeString(`<br><br>What would you like to view?`)
@@ -70,6 +54,30 @@ function AboutMe({ setViewableArea, viewableArea }) {
             )}
           </div>
         </div>
+      </div>
+      <div className="col-12 d-flex justify-content-center align-items-center order-lg-2 order-3">
+        <img
+          src={Github}
+          alt="Github Logo"
+          className="mx-3"
+          style={{
+            width: "80px",
+            backgroundColor: "white",
+            borderRadius: "70%",
+          }}
+        />
+        <img
+          src={Twitter}
+          alt="Twitter Logo"
+          style={{ width: "80px" }}
+          className="mx-3"
+        />
+        <img
+          src={LinkedIn}
+          alt="LinkedIn Logo"
+          style={{ width: "80px" }}
+          className="mx-3"
+        />
       </div>
     </div>
   );

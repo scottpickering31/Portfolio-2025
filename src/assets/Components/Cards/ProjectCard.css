@@ -3,8 +3,7 @@
 }
 
 .iphoneMockup,
-.ipadMockup,
-.macbookMockup {
+.ipadMockup {
   height: 500px;
   max-width: 100%;
 }
@@ -13,20 +12,31 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
   .techIcons {
     font-size: 2rem;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .techIcons {
-    font-size: 3rem;
+  .macbookMockup {
+    height: 300px;
+    max-width: 300px;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1280px) {
+  .techIcons {
+    font-size: 3rem;
+  }
+  .macbookMockup {
+    height: 400px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
   .techIcons {
     font-size: 4rem;
+  }
+  .macbookMockup {
+    max-width: 100%;
   }
 }

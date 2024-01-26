@@ -39,7 +39,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
 
   return (
     <div
-      className="container mb-5 text-center"
+      className="container mb-5 mt-5 text-center"
       style={{
         color: darkMode ? "white" : "black",
         backgroundColor: darkMode ? "transparent" : "white",
@@ -142,14 +142,13 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
         show={showModal}
         onHide={closeModal}
         centered
-        dialogClassName="modal-fullscreen d-flex align-items-center justify-content-center"
+        dialogClassName="modal-fullscreen"
       >
-        <Modal.Body>
+        <Modal.Body className=" d-flex align-items-center justify-content-center">
           <img
             src={modalImage}
             alt="Full Size"
             style={{
-              objectFit: "contain",
               maxHeight: "80vh",
               maxWidth: "200%",
             }}
