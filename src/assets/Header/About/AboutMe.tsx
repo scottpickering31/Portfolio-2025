@@ -5,14 +5,15 @@ import Github from "../../../../public/Images/Logos/Github.png";
 import LinkedIn from "../../../../public/Images/Logos/LinkedIn.png";
 import Twitter from "../../../../public/Images/Logos/Twitter.png";
 import Typewriter from "typewriter-effect";
+import "./AboutMe.css";
 
 function AboutMe({ setViewableArea, viewableArea }) {
-  const [viewOptions, setViewOptions] = useState(false);
+  const [fadeIn, setFadeIn] = useState("opacity-0");
 
   return (
     <div
-      className="row d-flex justify-content-center py-5 px-1 headerborder bg-black"
-      style={{ height: "100%" }}
+      className="row d-flex justify-content-center py-5 px-1 headerborder"
+      style={{ height: "100%", margin: "0" }}
     >
       <div className="col-12 col-lg-5 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
         <img
@@ -39,27 +40,27 @@ function AboutMe({ setViewableArea, viewableArea }) {
               .typeString(`<br><br>What would you like to view?`)
               .pauseFor(500)
               .callFunction(() => {
-                setViewOptions(true);
+                setFadeIn("fade-in");
               })
               .start();
           }}
         />
         <div>
-          <div className="mt-3">
-            {viewOptions && (
-              <AboutMeButtons
-                setViewableArea={setViewableArea}
-                viewableArea={viewableArea}
-              />
-            )}
+          <div className={`mt-3 ${fadeIn}`}>
+            <AboutMeButtons
+              setViewableArea={setViewableArea}
+              viewableArea={viewableArea}
+            />
           </div>
         </div>
       </div>
-      <div className="col-12 d-flex justify-content-center align-items-center order-lg-2 order-3">
+      <div
+        className={`col-12 d-flex justify-content-center align-items-center order-lg-2 order-3 ${fadeIn}`}
+      >
         <img
           src={Github}
           alt="Github Logo"
-          className="mx-3"
+          className="m-3"
           style={{
             width: "80px",
             backgroundColor: "white",
@@ -70,13 +71,13 @@ function AboutMe({ setViewableArea, viewableArea }) {
           src={Twitter}
           alt="Twitter Logo"
           style={{ width: "80px" }}
-          className="mx-3"
+          className="m-3"
         />
         <img
           src={LinkedIn}
           alt="LinkedIn Logo"
           style={{ width: "80px" }}
-          className="mx-3"
+          className="m-3"
         />
       </div>
     </div>
