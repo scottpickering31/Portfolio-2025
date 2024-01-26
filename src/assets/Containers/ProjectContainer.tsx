@@ -14,6 +14,28 @@ interface Project {
 const projectData = {
   projectOne: {
     h1title: "Projects",
+    description: "This is a description 3",
+    technologyImages: [
+      LightModeCurrentIcons.HTML5.icon,
+      LightModeCurrentIcons.CSS3.icon,
+      LightModeCurrentIcons.JavaScript.icon,
+    ],
+    technologyToolTips: [
+      LightModeCurrentIcons.HTML5.tooltip,
+      LightModeCurrentIcons.CSS3.tooltip,
+      LightModeCurrentIcons.JavaScript.tooltip,
+    ],
+    githubLink: "https://github.com",
+    liveLink: "https://github.com",
+    readme: "https://github.com",
+    iphone: ScottifyIphone,
+    macbook: ScottifyMacbook,
+    ipad: ScottifyIpad,
+    name: "Movie Finder",
+    id: 3,
+  },
+  projectTwo: {
+    h1title: null,
     description:
       "Built using Vite, React, Redux and Tailwind-CSS and utilising libraries such as react-calendar and react-google-maps, Elite Drives is a supercar rental website that offers a variety of cars and services for a given period of time.",
     technologyImages: [
@@ -41,7 +63,7 @@ const projectData = {
     name: "Elite Drives",
     id: 1,
   },
-  projectTwo: {
+  projectThree: {
     h1title: null,
     description:
       "A Spotify Playlist creator app created using Javascript and React, by logging in to your spotify account through the Spotify API you can then create your very own titled playlist in no time!",
@@ -64,28 +86,6 @@ const projectData = {
     name: "Scottify",
     id: 2,
   },
-  projectThree: {
-    h1title: null,
-    description: "This is a description 3",
-    technologyImages: [
-      LightModeCurrentIcons.HTML5.icon,
-      LightModeCurrentIcons.CSS3.icon,
-      LightModeCurrentIcons.JavaScript.icon,
-    ],
-    technologyToolTips: [
-      LightModeCurrentIcons.HTML5.tooltip,
-      LightModeCurrentIcons.CSS3.tooltip,
-      LightModeCurrentIcons.JavaScript.tooltip,
-    ],
-    githubLink: "https://github.com",
-    liveLink: "https://github.com",
-    readme: "https://github.com",
-    iphone: ScottifyIphone,
-    macbook: ScottifyMacbook,
-    ipad: ScottifyIpad,
-    name: "Movie Finder",
-    id: 3,
-  },
 };
 
 function ProjectContainer({ darkMode }: Project) {
@@ -93,7 +93,11 @@ function ProjectContainer({ darkMode }: Project) {
     <div>
       <ProjectCard darkMode={darkMode} projectData={projectData.projectOne} />
       <hr
-        style={{ border: "2px solid #ccc", width: "80%", margin: "20px auto" }}
+        style={{
+          border: "2px solid #FFFFFF",
+          width: "80%",
+          margin: "20px auto",
+        }}
       />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectTwo} />
       <hr
