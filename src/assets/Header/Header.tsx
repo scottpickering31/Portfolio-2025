@@ -1,5 +1,6 @@
 import AboutMe from "../../assets/Header/About/AboutMe";
 import NavigationMenu from "../Header/Navigation/NavigationMenu";
+import "./Header.css";
 
 function Header({
   toggleDarkMode,
@@ -7,14 +8,12 @@ function Header({
   setViewableArea,
   viewableArea,
 }: HeaderProps) {
-  const borderColor = darkMode ? "border-white" : "border-black";
-
   return (
-    <>
+    <div className="headerborder">
       <div>
         <NavigationMenu toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       </div>
-      <div className="container text-center">
+      <div className="text-center">
         <div className="col mb-5">
           <AboutMe
             setViewableArea={setViewableArea}
@@ -22,7 +21,7 @@ function Header({
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
