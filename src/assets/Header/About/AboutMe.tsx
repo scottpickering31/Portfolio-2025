@@ -5,7 +5,7 @@ import Github from "../../../../public/Images/Logos/Github.png";
 import LinkedIn from "../../../../public/Images/Logos/LinkedIn.png";
 import Twitter from "../../../../public/Images/Logos/Twitter.png";
 import Typewriter from "typewriter-effect";
-import "./AboutMe.css";
+import "../Header.css";
 
 function AboutMe({ setViewableArea, viewableArea, darkMode }) {
   const [fadeIn, setFadeIn] = useState("opacity-0");
@@ -16,7 +16,7 @@ function AboutMe({ setViewableArea, viewableArea, darkMode }) {
       style={{
         height: "100%",
         margin: "0",
-        backgroundColor: darkMode ? "white" : "black",
+        backgroundColor: darkMode ? "transparent" : "black",
       }}
     >
       <div className="col-12 col-lg-5 col-md-12 mb-3 mb-lg-0 order-lg-2 order-1">
@@ -27,8 +27,8 @@ function AboutMe({ setViewableArea, viewableArea, darkMode }) {
         />
       </div>
       <div
-        className="col-12 col-lg-5 col-md-12 fs-5 text-left order-lg-1 order-2 mb-5"
-        style={{ height: "50vh", color: darkMode ? "black" : "white" }}
+        className="col-12 col-lg-5 col-md-12 fs-5 text-left order-lg-1 order-2 mb-5 text-white"
+        style={{ height: "50vh" }}
       >
         <Typewriter
           onInit={(typewriter) => {
@@ -65,7 +65,7 @@ function AboutMe({ setViewableArea, viewableArea, darkMode }) {
           <img
             src={Github}
             alt="Github Logo"
-            className="m-3"
+            className="m-2"
             style={{
               width: "80px",
               backgroundColor: "white",
@@ -78,7 +78,7 @@ function AboutMe({ setViewableArea, viewableArea, darkMode }) {
             src={Twitter}
             alt="Twitter Logo"
             style={{ width: "80px" }}
-            className="m-3"
+            className="m-2"
           />
         </a>
         <a
@@ -89,7 +89,7 @@ function AboutMe({ setViewableArea, viewableArea, darkMode }) {
             src={LinkedIn}
             alt="LinkedIn Logo"
             style={{ width: "80px" }}
-            className="m-3"
+            className="m-2"
           />
         </a>
       </div>
