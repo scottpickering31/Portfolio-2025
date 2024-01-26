@@ -25,7 +25,9 @@ function AboutMeButtons({ setViewableArea }: AboutMeButtonsProps) {
       <button
         key={index}
         type="button"
-        className={`btn btn-primary m-2 fs-5 fw-bold ${buttonIndex >= index ? "visible" : "hidden"}`}
+        className={`btn btn-primary m-2 fs-6 fw-bold ${
+          buttonIndex >= index ? "visible" : "hidden"
+        }`}
         onClick={() => setViewableArea(true)}
       >
         {button}

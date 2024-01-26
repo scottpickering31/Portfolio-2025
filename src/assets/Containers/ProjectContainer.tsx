@@ -32,7 +32,7 @@ const projectData = {
     macbook: ScottifyMacbook,
     ipad: ScottifyIpad,
     name: "Movie Finder",
-    id: 3,
+    id: 1,
   },
   projectTwo: {
     h1title: null,
@@ -61,7 +61,7 @@ const projectData = {
     macbook: EliteDrivesMacbook,
     ipad: EliteDrivesIpad,
     name: "Elite Drives",
-    id: 1,
+    id: 2,
   },
   projectThree: {
     h1title: null,
@@ -84,7 +84,7 @@ const projectData = {
     macbook: ScottifyMacbook,
     ipad: ScottifyIpad,
     name: "Scottify",
-    id: 2,
+    id: 3,
   },
 };
 
@@ -94,7 +94,7 @@ function ProjectContainer({ darkMode }: Project) {
       <ProjectCard darkMode={darkMode} projectData={projectData.projectOne} />
       <hr
         style={{
-          border: "2px solid #FFFFFF",
+          border: "2px solid #ccc",
           width: "80%",
           margin: "20px auto",
         }}

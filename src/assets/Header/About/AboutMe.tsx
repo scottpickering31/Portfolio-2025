@@ -34,7 +34,7 @@ function AboutMe({ setViewableArea, viewableArea }) {
               .typeString(`Hello, and welcome to my Portfolio!`)
               .pauseFor(1000)
               .typeString(
-                `<br><br>My Name is <strong><span style="color: #ffae52;">Scott Pickering</span></strong>, and I'm a <span style="color: #ffae52;"><strong>Full Stack Developer</strong></span> from <span style="color: #ffae52;"><strong>Hitchin, Hertfordshire</strong></span>.`,
+                `<br><br>My Name is <strong><span style="color: #ffae52;">Scott Pickering</span></strong>, and I'm a <span style="color: #ffae52;"><strong>Full Stack Developer</strong></span> from <span style="color: #ffae52;"><strong>Hitchin, Hertfordshire</strong></span>.`
               )
               .pauseFor(1000)
               .typeString(`<br><br>What would you like to view?`)
@@ -57,28 +57,37 @@ function AboutMe({ setViewableArea, viewableArea }) {
       <div
         className={`col-12 d-flex justify-content-center align-items-center order-lg-2 order-3 ${fadeIn}`}
       >
-        <img
-          src={Github}
-          alt="Github Logo"
-          className="m-3"
-          style={{
-            width: "80px",
-            backgroundColor: "white",
-            borderRadius: "70%",
-          }}
-        />
-        <img
-          src={Twitter}
-          alt="Twitter Logo"
-          style={{ width: "80px" }}
-          className="m-3"
-        />
-        <img
-          src={LinkedIn}
-          alt="LinkedIn Logo"
-          style={{ width: "80px" }}
-          className="m-3"
-        />
+        <a href="https://github.com/scottpickering31" target="_blank">
+          <img
+            src={Github}
+            alt="Github Logo"
+            className="m-3"
+            style={{
+              width: "80px",
+              backgroundColor: "white",
+              borderRadius: "70%",
+            }}
+          />
+        </a>
+        <a href="https://twitter.com/scottypickering" target="_blank">
+          <img
+            src={Twitter}
+            alt="Twitter Logo"
+            style={{ width: "80px" }}
+            className="m-3"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/scott-pickering-b6b05287/"
+          target="_blank"
+        >
+          <img
+            src={LinkedIn}
+            alt="LinkedIn Logo"
+            style={{ width: "80px" }}
+            className="m-3"
+          />
+        </a>
       </div>
     </div>
   );
