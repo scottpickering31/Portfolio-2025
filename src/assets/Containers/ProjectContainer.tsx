@@ -1,5 +1,5 @@
 import ProjectCard from "../Components/Cards/ProjectCard";
-import MovieFinder from "../../../public/Images/movie-finder.jpg";
+
 import EliteDrivesIphone from "../../../public/Images/Project-Images/EliteDrives-Iphone-Mockup.png";
 import EliteDrivesIpad from "../../../public/Images/Project-Images/EliteDrives-Ipad-Mockup.png";
 import EliteDrivesMacbook from "../../../public/Images/Project-Images/EliteDrives-Macbook-Mockup.png";
@@ -7,6 +7,7 @@ import ScottifyIphone from "../../../public/Images/Project-Images/Scottify-Iphon
 import ScottifyIpad from "../../../public/Images/Project-Images/Scottify-Ipad-Mockup.png";
 import ScottifyMacbook from "../../../public/Images/Project-Images/Scottify-Macbook-Mockup.png";
 import { LightModeCurrentIcons } from "../Data/DarkModeIconData";
+import "./ProjectContainer.scss";
 interface Project {
   darkMode: boolean;
 }
@@ -96,19 +97,11 @@ const projectData = {
 
 function ProjectContainer({ darkMode }: Project) {
   return (
-    <div>
+    <div className="projectContainer">
       <ProjectCard darkMode={darkMode} projectData={projectData.projectOne} />
-      <hr
-        style={{
-          border: "2px solid #ccc",
-          width: "80%",
-          margin: "20px auto",
-        }}
-      />
+      <hr />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectTwo} />
-      <hr
-        style={{ border: "2px solid #ccc", width: "80%", margin: "20px auto" }}
-      />
+      <hr />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectThree} />
     </div>
   );

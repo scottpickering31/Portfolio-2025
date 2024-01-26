@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import ProjectDescription from "./ProjectDescription";
-import "./ProjectCard.css";
+import "./ProjectCard.scss";
 
 interface ProjectCardProps {
   darkMode: boolean;

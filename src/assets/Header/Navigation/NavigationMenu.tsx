@@ -2,7 +2,7 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import nightAnimationData from "../../../../public/Lotties/NightToDayToggle.json";
 import dayAnimationData from "../../../../public/Lotties/DayToNightToggle.json";
-import "./NavigationMenu.css";
+import "./NavigationMenu.scss";
 
 function NavigationMenu({ toggleDarkMode, darkMode }) {
   const [animationState, setAnimationState] = useState({

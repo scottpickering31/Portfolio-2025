@@ -1,5 +1,5 @@
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import "./ProjectCard.css";
+import "./ProjectCard.scss";
 
 interface ProjectCardProps {
   darkMode: boolean;

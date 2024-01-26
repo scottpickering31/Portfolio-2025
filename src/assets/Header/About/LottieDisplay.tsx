@@ -1,6 +1,6 @@
 // LottieDisplay.jsx
 import Lottie from "react-lottie";
-import "./AboutMe.css";
+import "./AboutMe.scss";
 
 function LottieDisplay({ animationOptions, animationState, logoObject }) {
   return (

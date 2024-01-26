@@ -1,6 +1,6 @@
 import AboutMe from "../../assets/Header/About/AboutMe";
 import NavigationMenu from "../Header/Navigation/NavigationMenu";
-import "./Header.css";
+import "./Header.scss";
 
 function Header({
   toggleDarkMode,

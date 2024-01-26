@@ -5,7 +5,7 @@ import Github from "../../../../public/Images/Logos/Github.png";
 import LinkedIn from "../../../../public/Images/Logos/LinkedIn.png";
 import Twitter from "../../../../public/Images/Logos/Twitter.png";
 import Typewriter from "typewriter-effect";
-import "../Header.css";
+import "./AboutMe.scss";
 
 function AboutMe({ setViewableArea, viewableArea, darkMode }) {
   const [fadeIn, setFadeIn] = useState("opacity-0");

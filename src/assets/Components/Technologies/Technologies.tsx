@@ -2,7 +2,7 @@ import {
   DarkModeCurrentIcons,
   LightModeCurrentIcons,
 } from "../../Data/DarkModeIconData.tsx";
-import "./Technologies.css";
+import "./Technologies.scss";
 
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { useEffect } from "react";
