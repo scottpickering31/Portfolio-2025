@@ -1,4 +1,8 @@
-function AboutMeButtons({ setViewableArea }: AboutMeButtonsProps) {
+function AboutMeButtons({
+  setViewableArea,
+}: {
+  setViewableArea: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const renderButtons = () => {
     const buttons = ["My Projects", "Contact Me", "My Tech Stack"];
 

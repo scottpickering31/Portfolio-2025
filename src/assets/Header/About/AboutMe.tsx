@@ -7,7 +7,13 @@ import Twitter from "../../../../public/Images/Logos/Twitter.png";
 import Typewriter from "typewriter-effect";
 import "./AboutMe.scss";
 
-function AboutMe({ setViewableArea, viewableArea, darkMode }) {
+interface AboutMeProps {
+  setViewableArea: React.Dispatch<React.SetStateAction<boolean>>;
+  viewableArea: boolean;
+  darkMode: boolean;
+}
+
+function AboutMe({ setViewableArea, darkMode }: AboutMeProps) {
   const [fadeIn, setFadeIn] = useState("opacity-0");
 
   return (
@@ -51,10 +57,7 @@ function AboutMe({ setViewableArea, viewableArea, darkMode }) {
         />
         <div>
           <div className={`mt-3 ${fadeIn}`}>
-            <AboutMeButtons
-              setViewableArea={setViewableArea}
-              viewableArea={viewableArea}
-            />
+            <AboutMeButtons setViewableArea={setViewableArea} />
           </div>
         </div>
       </div>
