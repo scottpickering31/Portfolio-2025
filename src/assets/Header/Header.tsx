@@ -5,16 +5,9 @@ import "./Header.scss";
 interface HeaderProps {
   toggleDarkMode: () => void;
   darkMode: boolean;
-  setViewableArea: React.Dispatch<React.SetStateAction<boolean>>;
-  viewableArea: boolean;
 }
 
-function Header({
-  toggleDarkMode,
-  darkMode,
-  setViewableArea,
-  viewableArea,
-}: HeaderProps) {
+function Header({ toggleDarkMode, darkMode }: HeaderProps) {
   return (
     <div className="headerborder">
       <div>
@@ -22,11 +15,7 @@ function Header({
       </div>
       <div className="text-center">
         <div className="col mb-5">
-          <AboutMe
-            darkMode={darkMode}
-            setViewableArea={setViewableArea}
-            viewableArea={viewableArea}
-          />
+          <AboutMe darkMode={darkMode} />
         </div>
       </div>
     </div>

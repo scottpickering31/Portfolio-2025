@@ -6,10 +6,10 @@ import FutureTechnologies from "./assets/Components/Technologies/FutureTechnolog
 import Technologies from "./assets/Components/Technologies/Technologies";
 import ProjectContainer from "../src/assets/Containers/ProjectContainer";
 import TwinkleStars from "../public/Lotties/TwinkleStars.json";
+import { Element, animateScroll as scroll } from "react-scroll";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const [viewableArea, setViewableArea] = useState<boolean>(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -42,20 +42,19 @@ function App() {
             <Lottie options={twinkleStarsOptions} />
           </div>
         )}
-        <Header
-          toggleDarkMode={toggleDarkMode}
-          darkMode={darkMode}
-          setViewableArea={setViewableArea}
-          viewableArea={viewableArea}
-        />
-        {viewableArea && (
-          <div>
+        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        <div>
+          <Element name="techstack">
             <Technologies darkMode={darkMode} />
-            <FutureTechnologies darkMode={darkMode} />
+          </Element>
+          <FutureTechnologies darkMode={darkMode} />
+          <Element name="projects">
             <ProjectContainer darkMode={darkMode} />
+          </Element>
+          <Element name="contact">
             <Footer />
-          </div>
-        )}
+          </Element>
+        </div>
       </div>
     </>
   );

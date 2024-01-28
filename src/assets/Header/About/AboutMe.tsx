@@ -13,7 +13,7 @@ interface AboutMeProps {
   darkMode: boolean;
 }
 
-function AboutMe({ setViewableArea, darkMode }: AboutMeProps) {
+function AboutMe({ darkMode }: AboutMeProps) {
   const [fadeIn, setFadeIn] = useState("opacity-0");
 
   return (
@@ -57,7 +57,7 @@ function AboutMe({ setViewableArea, darkMode }: AboutMeProps) {
         />
         <div>
           <div className={`mt-3 ${fadeIn}`}>
-            <AboutMeButtons setViewableArea={setViewableArea} />
+            <AboutMeButtons />
           </div>
         </div>
       </div>

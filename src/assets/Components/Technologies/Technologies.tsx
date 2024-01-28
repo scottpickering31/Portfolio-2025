@@ -3,7 +3,6 @@ import {
   LightModeCurrentIcons,
 } from "../../Data/DarkModeIconData.tsx";
 import "./Technologies.scss";
-
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { useEffect } from "react";
 
