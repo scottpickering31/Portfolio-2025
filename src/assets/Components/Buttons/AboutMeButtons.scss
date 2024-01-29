@@ -1,4 +1,26 @@
-button:hover {
+.aboutMeBtn {
+  font-family: "Syne", sans-serif;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  background-image: linear-gradient(to right, #e052a0, #f15c41);
+  cursor: pointer;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.aboutMeBtn:hover {
+  background-image: linear-gradient(to right, #3ec7e0, #526bf4);
+}
+
+.contactImg:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }

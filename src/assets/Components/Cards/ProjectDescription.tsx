@@ -1,5 +1,6 @@
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./ProjectCard.scss";
+import "../Buttons/AboutMeButtons.scss";
 
 interface ProjectCardProps {
   darkMode: boolean;
@@ -50,32 +51,32 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
         </div>
       </div>
       <div className="col text-center d-flex flex-column justify-content-center">
-        <button className="btn btn-primary mb-3">
+        <button className="mb-3 aboutMeBtn">
           <a
             href={projectData.liveLink}
             target="_blank"
             rel="noreferrer"
-            className="text-white text-decoration-none"
+            className="text-white text-decoration-none fs-6 fw-bold"
           >
             VIEW PROJECT
           </a>
         </button>
-        <button className="btn btn-primary mb-3">
+        <button className="mb-3 aboutMeBtn">
           <a
             href={projectData.githubLink}
             target="_blank"
             rel="noreferrer"
-            className="text-white text-decoration-none"
+            className="text-white text-decoration-none fs-6 fw-bold"
           >
             SOURCE CODE
           </a>
         </button>
-        <button className="btn btn-primary mb-3">
+        <button className="mb-3 aboutMeBtn">
           <a
             href={projectData.readme}
             target="_blank"
             rel="noreferrer"
-            className="text-white text-decoration-none"
+            className="text-white text-decoration-none fs-6 fw-bold"
           >
             READ ME
           </a>
