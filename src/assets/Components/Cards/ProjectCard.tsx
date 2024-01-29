@@ -104,13 +104,13 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
                   </div>
                 </div>
                 <button
-                  className="carousel-control-prev"
+                  className="carousel-control-prev "
                   type="button"
                   data-bs-target={`#${carouselId}`}
                   data-bs-slide="prev"
                 >
                   <span
-                    className="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon "
                     aria-hidden="true"
                   ></span>
                   <span className="visually-hidden">Previous</span>
@@ -125,7 +125,7 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
                     className="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span className="visually-hidden">Next</span>
+                  <span className="visually-hidden ">Next</span>
                 </button>
               </div>
             </div>

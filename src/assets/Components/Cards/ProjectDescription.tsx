@@ -56,7 +56,7 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
             href={projectData.liveLink}
             target="_blank"
             rel="noreferrer"
-            className="text-white text-decoration-none fs-6 fw-bold"
+            className="text-white text-decoration-none fs-6 fw-bold d-block"
           >
             VIEW PROJECT
           </a>
@@ -66,7 +66,7 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
             href={projectData.githubLink}
             target="_blank"
             rel="noreferrer"
-            className="text-white text-decoration-none fs-6 fw-bold"
+            className="text-white text-decoration-none fs-6 fw-bold d-block"
           >
             SOURCE CODE
           </a>
@@ -76,7 +76,7 @@ function ProjectDescription({ projectData, darkMode }: ProjectCardProps) {
             href={projectData.readme}
             target="_blank"
             rel="noreferrer"
-            className="text-white text-decoration-none fs-6 fw-bold"
+            className="text-white text-decoration-none fs-6 fw-bold d-block"
           >
             READ ME
           </a>
