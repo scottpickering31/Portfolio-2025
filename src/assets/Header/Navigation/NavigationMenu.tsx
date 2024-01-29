@@ -4,7 +4,12 @@ import nightAnimationData from "../../../../public/Lotties/NightToDayToggle.json
 import dayAnimationData from "../../../../public/Lotties/DayToNightToggle.json";
 import "./NavigationMenu.scss";
 
-function NavigationMenu({ toggleDarkMode, darkMode }) {
+interface NavigationMenuProps {
+  toggleDarkMode: () => void;
+  darkMode: boolean;
+}
+
+function NavigationMenu({ toggleDarkMode, darkMode }: NavigationMenuProps) {
   const [animationState, setAnimationState] = useState({
     isStopped: true,
     isPaused: true,

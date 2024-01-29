@@ -7,13 +7,14 @@ interface ProjectCardProps {
   projectData: {
     h1title: string | null;
     description: string;
-    technologies: string[];
+    technologyImages: (string | React.ReactNode)[];
+    technologyToolTips: string[];
     githubLink: string;
     liveLink: string;
     readme: string;
-    iphone: string | null;
-    ipad: string | null;
-    macbook: string | null;
+    iphone: string | React.ReactNode;
+    ipad: string | React.ReactNode;
+    macbook: string | React.ReactNode;
     name: string;
     id: number;
   };

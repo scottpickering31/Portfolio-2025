@@ -6,7 +6,7 @@ import FutureTechnologies from "./assets/Components/Technologies/FutureTechnolog
 import Technologies from "./assets/Components/Technologies/Technologies";
 import ProjectContainer from "../src/assets/Containers/ProjectContainer";
 import TwinkleStars from "../public/Lotties/TwinkleStars.json";
-import { Element, animateScroll as scroll } from "react-scroll";
+import { Element } from "react-scroll";
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);

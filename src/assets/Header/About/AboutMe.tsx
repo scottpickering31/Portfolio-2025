@@ -8,8 +8,6 @@ import Typewriter from "typewriter-effect";
 import "./AboutMe.scss";
 
 interface AboutMeProps {
-  setViewableArea: React.Dispatch<React.SetStateAction<boolean>>;
-  viewableArea: boolean;
   darkMode: boolean;
 }
 
@@ -41,7 +39,7 @@ function AboutMe({ darkMode }: AboutMeProps) {
               .typeString(`Hello, and welcome to my Portfolio!`)
               .pauseFor(1000)
               .typeString(
-                `<br><br>My Name is <strong><span style="color: #ffae52;">Scott Pickering</span></strong>, and I'm a <span style="color: #ffae52;"><strong>Full Stack Developer</strong></span> from <span style="color: #ffae52;"><strong>Hitchin, Hertfordshire</strong></span>.`,
+                `<br><br>My Name is <strong><span style="color: #ffae52;">Scott Pickering</span></strong>, and I'm a <span style="color: #ffae52;"><strong>Full Stack Developer</strong></span> from <span style="color: #ffae52;"><strong>Hitchin, Hertfordshire</strong></span>.`
               )
               .pauseFor(1000)
               .typeString(`<br><br>What would you like to view?`)

@@ -36,7 +36,7 @@ function Footer() {
               <textarea
                 className="form-control"
                 id="exampleFormControlTextarea1"
-                rows="4"
+                rows={4}
                 name="body"
               ></textarea>
             </div>
