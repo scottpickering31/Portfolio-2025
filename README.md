@@ -1,7 +1,7 @@
 
 # Portfolio 2024
 
-![Portfolio Preview](link/to/preview/image.png)
+![Portfolio-2024 Mockups](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/2d59ad31-34ce-4610-a791-b97480933cc9)
 
 Welcome to my Portfolio 2024 project! This is a showcase of my skills and various projects created using Vite, React, TypeScript, Bootstrap, and Sass.
 
@@ -44,8 +44,9 @@ npm run dev
 
 
 ## Screenshots
-![Iphone](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/bc69fac7-829b-4ed0-95f6-3d1cce5a3f6a)
 
-![Ipad](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/d4dfc485-61c0-4134-8315-3f1f921775eb)
+![Portfolio-Iphone-Mockup](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/82fe120c-cfa8-4896-8c25-6910cf9f34e0)
 
-![MacBook](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/204b937c-3cec-48aa-b267-cf118510d630)
+![Portfolio-Ipad-Mockup](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/913a7e8d-2cae-4814-9e4b-3424ff3141cd)
+
+![Portfolio-Macbook-Mockup](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/bfbb3bdc-5f42-41c2-ba93-2179ed2da5cd)
