@@ -32,10 +32,7 @@ function AboutMe({ darkMode }: AboutMeProps) {
           className="rounded-circle img-fluid"
         />
       </div>
-      <div
-        className="col-12 col-lg-5 col-md-12 fs-5 text-left order-lg-1 order-2 mb-5 text-white"
-        style={{ height: "50vh" }}
-      >
+      <div className="col-12 col-lg-5 col-md-12 fs-5 text-left order-lg-1 order-2 mb-5 text-white aboutMeBorder">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -44,7 +41,7 @@ function AboutMe({ darkMode }: AboutMeProps) {
               .typeString(`Hello, and welcome to my Portfolio!`)
               .pauseFor(1000)
               .typeString(
-                `<br><br>My Name is <strong><span style="color: #ffae52;">Scott Pickering</span></strong>, and I'm a <span style="color: #ffae52;"><strong>Full Stack Developer</strong></span> from <span style="color: #ffae52;"><strong>Hitchin, Hertfordshire</strong></span>.`
+                `<br><br>My Name is <strong><span style="color: #ffae52;">Scott Pickering</span></strong>, and I'm a <span style="color: #ffae52;"><strong>Full Stack Developer</strong></span> from <span style="color: #ffae52;"><strong>Hitchin, Hertfordshire</strong></span>.`,
               )
               .pauseFor(1000)
               .typeString(`<br><br>What would you like to view?`)

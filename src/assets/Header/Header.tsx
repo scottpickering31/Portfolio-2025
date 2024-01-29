@@ -1,6 +1,5 @@
 import AboutMe from "../../assets/Header/About/AboutMe";
 import NavigationMenu from "../Header/Navigation/NavigationMenu";
-import "./Header.scss";
 
 interface HeaderProps {
   toggleDarkMode: () => void;
