@@ -83,11 +83,13 @@ const projectData = {
       LightModeCurrentIcons.HTML5.icon,
       LightModeCurrentIcons.CSS3.icon,
       LightModeCurrentIcons.JavaScript.icon,
+      LightModeCurrentIcons.React.icon,
     ],
     technologyToolTips: [
       LightModeCurrentIcons.HTML5.tooltip,
       LightModeCurrentIcons.CSS3.tooltip,
       LightModeCurrentIcons.JavaScript.tooltip,
+      LightModeCurrentIcons.React.tooltip,
     ],
     githubLink: "https://github.com/scottpickering31/scottify-app",
     liveLink: "https://scottpickering31.github.io/scottify-app/",
