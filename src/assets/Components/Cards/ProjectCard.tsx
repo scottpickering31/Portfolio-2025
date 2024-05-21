@@ -15,7 +15,7 @@ interface ProjectCardProps {
     readme: string;
     iphone: string;
     ipad: string;
-    macbook: string;
+    macbook: string | null;
     name: string;
     id: number;
   };
