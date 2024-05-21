@@ -8,7 +8,11 @@ import ScottifyMacbook from "../../../public/Images/Project-Images/Scottify-Macb
 import PortfolioIphone from "../../../public/Images/Project-Images/Portfolio-Iphone-Mockup.png";
 import PortfolioIpad from "../../../public/Images/Project-Images/Portfolio-Ipad-Mockup.png";
 import PortfolioMacbook from "../../../public/Images/Project-Images/Portfolio-Macbook-Mockup.png";
-import { LightModeCurrentIcons } from "../Data/DarkModeIconData";
+import PetScheduler from "../../../public/Images/Project-Images/PetScheduler.png";
+import {
+  LightModeCurrentIcons,
+  LightModeFutureIcons,
+} from "../Data/DarkModeIconData";
 import "./ProjectContainer.scss";
 interface Project {
   darkMode: boolean;
@@ -17,6 +21,36 @@ interface Project {
 const projectData = {
   projectOne: {
     h1title: "Projects",
+    description:
+      "A Pet Scheduling application for Groomers, Veterenarians, Boarding providers etc. for Pets, this is my first long-term software as a service project, due to complete by EOY 2024. Using Next.js for the landing page and SEO, and React for the application itself",
+    technologyImages: [
+      LightModeCurrentIcons.HTML5.icon,
+      LightModeCurrentIcons.CSS3.icon,
+      LightModeCurrentIcons.Typescript.icon,
+      LightModeCurrentIcons.React.icon,
+      LightModeFutureIcons.Next.icon,
+      LightModeCurrentIcons.TailwindCSS.icon,
+    ],
+    technologyToolTips: [
+      LightModeCurrentIcons.HTML5.tooltip,
+      LightModeCurrentIcons.CSS3.tooltip,
+      LightModeCurrentIcons.Typescript.tooltip,
+      LightModeCurrentIcons.React.tooltip,
+      LightModeFutureIcons.Next.tooltip,
+      LightModeCurrentIcons.TailwindCSS.tooltip,
+    ],
+    githubLink: "https://github.com/scottpickering31/petschedules-main-blog",
+    liveLink: "https://scottpickering31.github.io/Portfolio-2024/",
+    readme:
+      "https://github.com/scottpickering31/scottify-app/blob/main/README.md",
+    iphone: PetScheduler,
+    macbook: null,
+    ipad: PetScheduler,
+    name: "Pet Scheduler - Coming Soon 2024 (source code available)",
+    id: 1,
+  },
+  projectTwo: {
+    h1title: null,
     description:
       "This is my Portfolio, created in January 2024, it showcases my projects and skills, made using Typescript, React, Bootstrap and Sass",
     technologyImages: [
@@ -43,9 +77,9 @@ const projectData = {
     macbook: PortfolioMacbook,
     ipad: PortfolioIpad,
     name: "Portfolio 2024",
-    id: 1,
+    id: 2,
   },
-  projectTwo: {
+  projectThree: {
     h1title: null,
     description:
       "Built using Vite, React, Redux and Tailwind-CSS and utilising libraries such as react-calendar and react-google-maps, Elite Drives is a supercar rental website that offers a variety of cars and services for a given period of time.",
@@ -73,9 +107,9 @@ const projectData = {
     macbook: EliteDrivesMacbook,
     ipad: EliteDrivesIpad,
     name: "Elite Drives",
-    id: 2,
+    id: 3,
   },
-  projectThree: {
+  projectFour: {
     h1title: null,
     description:
       "A Spotify Playlist creator app created using Javascript and React, by logging in to your spotify account through the Spotify API you can then create your very own titled playlist in no time!",
@@ -99,7 +133,7 @@ const projectData = {
     macbook: ScottifyMacbook,
     ipad: ScottifyIpad,
     name: "Scottify",
-    id: 3,
+    id: 4,
   },
 };
 
@@ -111,6 +145,8 @@ function ProjectContainer({ darkMode }: Project) {
       <ProjectCard darkMode={darkMode} projectData={projectData.projectTwo} />
       <hr />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectThree} />
+      <hr />
+      <ProjectCard darkMode={darkMode} projectData={projectData.projectFour} />
     </div>
   );
 }

@@ -95,14 +95,16 @@ function ProjectCard({ darkMode, projectData }: ProjectCardProps) {
                       onClick={() => handleImageClick(projectData.ipad)}
                     />
                   </div>
-                  <div className="carousel-item">
-                    <img
-                      src={projectData.macbook}
-                      className="d-block macbookMockup"
-                      alt="Macbook"
-                      onClick={() => handleImageClick(projectData.macbook)}
-                    />
-                  </div>
+                  {projectData.macbook !== null && (
+                    <div className="carousel-item">
+                      <img
+                        src={projectData.macbook}
+                        className="d-block macbookMockup"
+                        alt="Macbook"
+                        onClick={() => handleImageClick(projectData.macbook)}
+                      />
+                    </div>
+                  )}
                 </div>
                 <button
                   className="carousel-control-prev "
