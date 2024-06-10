@@ -22,13 +22,13 @@ const projectData = {
   projectOne: {
     h1title: "Projects",
     description:
-      "A Pet Scheduling application for Groomers, Veterenarians, Boarding providers etc. for Pets, this is my first long-term software as a service project, due to complete by EOY 2024. Using Next.js for the landing page and SEO, and React for the application itself",
+      "Worldwide live-data weather App, utilizing rapidAPI data, created using React/Redux/Typescript/Tailwind",
     technologyImages: [
       LightModeCurrentIcons.HTML5.icon,
       LightModeCurrentIcons.CSS3.icon,
       LightModeCurrentIcons.Typescript.icon,
       LightModeCurrentIcons.React.icon,
-      LightModeFutureIcons.Next.icon,
+      LightModeCurrentIcons.Redux.icon,
       LightModeCurrentIcons.TailwindCSS.icon,
     ],
     technologyToolTips: [
@@ -36,50 +36,19 @@ const projectData = {
       LightModeCurrentIcons.CSS3.tooltip,
       LightModeCurrentIcons.Typescript.tooltip,
       LightModeCurrentIcons.React.tooltip,
-      LightModeFutureIcons.Next.tooltip,
+      LightModeCurrentIcons.Redux.tooltip,
       LightModeCurrentIcons.TailwindCSS.tooltip,
     ],
-    githubLink: "https://github.com/scottpickering31/petschedules-main-blog",
-    liveLink: "https://scottpickering31.github.io/Portfolio-2024/",
-    readme:
-      "https://github.com/scottpickering31/scottify-app/blob/main/README.md",
-    iphone: PetScheduler,
-    macbook: null,
-    ipad: PetScheduler,
-    name: "Pet Scheduler - Coming Soon 2024 (source code available)",
-    id: 1,
-  },
-  projectTwo: {
-    h1title: null,
-    description:
-      "This is my Portfolio, created in January 2024, it showcases my projects and skills, made using Typescript, React, Bootstrap and Sass",
-    technologyImages: [
-      LightModeCurrentIcons.HTML5.icon,
-      LightModeCurrentIcons.CSS3.icon,
-      LightModeCurrentIcons.Typescript.icon,
-      LightModeCurrentIcons.React.icon,
-      LightModeCurrentIcons.Bootstrap.icon,
-      LightModeCurrentIcons.Sass.icon,
-    ],
-    technologyToolTips: [
-      LightModeCurrentIcons.HTML5.tooltip,
-      LightModeCurrentIcons.CSS3.tooltip,
-      LightModeCurrentIcons.Typescript.tooltip,
-      LightModeCurrentIcons.React.tooltip,
-      LightModeCurrentIcons.Bootstrap.tooltip,
-      LightModeCurrentIcons.Sass.tooltip,
-    ],
-    githubLink: "https://github.com/scottpickering31/Portfolio-2024",
-    liveLink: "https://scottpickering31.github.io/Portfolio-2024/",
-    readme:
-      "https://github.com/scottpickering31/Portfolio-2024/blob/main/README.md",
+    githubLink: "https://github.com/scottpickering31/weatherful",
+    liveLink: "https://scottpickering31.github.io/weatherful",
+    readme: "https://github.com/scottpickering31/weatherful/blob/master/readme",
     iphone: PortfolioIphone,
     macbook: PortfolioMacbook,
     ipad: PortfolioIpad,
-    name: "Portfolio 2024",
-    id: 2,
+    name: "Weatherful",
+    id: 1,
   },
-  projectThree: {
+  projectTwo: {
     h1title: null,
     description:
       "Built using Vite, React, Redux and Tailwind-CSS and utilising libraries such as react-calendar and react-google-maps, Elite Drives is a supercar rental website that offers a variety of cars and services for a given period of time.",
@@ -107,9 +76,9 @@ const projectData = {
     macbook: EliteDrivesMacbook,
     ipad: EliteDrivesIpad,
     name: "Elite Drives",
-    id: 3,
+    id: 2,
   },
-  projectFour: {
+  projectThree: {
     h1title: null,
     description:
       "A Spotify Playlist creator app created using Javascript and React, by logging in to your spotify account through the Spotify API you can then create your very own titled playlist in no time!",
@@ -133,6 +102,36 @@ const projectData = {
     macbook: ScottifyMacbook,
     ipad: ScottifyIpad,
     name: "Scottify",
+    id: 3,
+  },
+  projectFour: {
+    h1title: null,
+    description:
+      "A Pet Scheduling application for Groomers, Veterenarians, Boarding providers etc. for Pets, this is my first long-term software as a service project, due to complete by EOY 2024. Using Next.js for the landing page and SEO, and React for the application itself",
+    technologyImages: [
+      LightModeCurrentIcons.HTML5.icon,
+      LightModeCurrentIcons.CSS3.icon,
+      LightModeCurrentIcons.Typescript.icon,
+      LightModeCurrentIcons.React.icon,
+      LightModeFutureIcons.Next.icon,
+      LightModeCurrentIcons.TailwindCSS.icon,
+    ],
+    technologyToolTips: [
+      LightModeCurrentIcons.HTML5.tooltip,
+      LightModeCurrentIcons.CSS3.tooltip,
+      LightModeCurrentIcons.Typescript.tooltip,
+      LightModeCurrentIcons.React.tooltip,
+      LightModeFutureIcons.Next.tooltip,
+      LightModeCurrentIcons.TailwindCSS.tooltip,
+    ],
+    githubLink: "https://github.com/scottpickering31/petschedules-main-blog",
+    liveLink: "https://scottpickering31.github.io/Portfolio-2024/",
+    readme:
+      "https://github.com/scottpickering31/scottify-app/blob/main/README.md",
+    iphone: PetScheduler,
+    macbook: null,
+    ipad: PetScheduler,
+    name: "Pet Scheduler - Coming Soon 2024 (source code available)",
     id: 4,
   },
 };

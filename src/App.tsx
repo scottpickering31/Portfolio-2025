@@ -2,7 +2,6 @@ import { useState } from "react";
 import Lottie from "react-lottie";
 import Header from "../src/assets/Header/Header";
 import Footer from "../src/assets/Footer/Footer";
-import FutureTechnologies from "./assets/Components/Technologies/FutureTechnologies";
 import Technologies from "./assets/Components/Technologies/Technologies";
 import ProjectContainer from "../src/assets/Containers/ProjectContainer";
 import TwinkleStars from "../public/Lotties/TwinkleStars.json";
@@ -47,7 +46,7 @@ function App() {
           <Element name="techstack">
             <Technologies darkMode={darkMode} />
           </Element>
-          <FutureTechnologies darkMode={darkMode} />
+
           <Element name="projects">
             <ProjectContainer darkMode={darkMode} />
           </Element>

@@ -29,10 +29,25 @@ export const DarkModeCurrentIcons: Icons = {
     icon: <i className="devicon-typescript-plain"></i>,
     tooltip: "Typescript",
   },
+  "C#": {
+    alt: "C# Icon",
+    icon: <i className="devicon-csharp-plain"></i>,
+    tooltip: "C#",
+  },
+  ".Net": {
+    alt: ".Net Icon",
+    icon: <i className="devicon-dot-net-plain-wordmark"></i>,
+    tooltip: ".Net",
+  },
   React: {
     alt: "React Icon",
     icon: <i className="devicon-react-original"></i>,
     tooltip: "React",
+  },
+  Next: {
+    alt: "NextJS Icon",
+    icon: <i className="devicon-nextjs-plain"></i>,
+    tooltip: "NextJS",
   },
   Redux: {
     alt: "Redux Icon",
@@ -84,6 +99,16 @@ export const DarkModeCurrentIcons: Icons = {
     icon: <i className="devicon-github-plain"></i>,
     tooltip: "Github",
   },
+  Figma: {
+    alt: "Figma Icon",
+    icon: <i className="devicon-figma-plain"></i>,
+    tooltip: "Figma",
+  },
+  Jira: {
+    alt: "Jira Icon",
+    icon: <i className="devicon-jira-plain"></i>,
+    tooltip: "Jira",
+  },
 };
 
 export const LightModeCurrentIcons: Icons = {
@@ -107,10 +132,25 @@ export const LightModeCurrentIcons: Icons = {
     icon: <i className="devicon-typescript-plain colored"></i>,
     tooltip: "Typescript",
   },
+  "C#": {
+    alt: "C# Icon",
+    icon: <i className="devicon-csharp-plain colored"></i>,
+    tooltip: "C#",
+  },
+  ".Net": {
+    alt: ".Net Icon",
+    icon: <i className="devicon-dot-net-plain-wordmark colored"></i>,
+    tooltip: ".Net",
+  },
   React: {
     alt: "React Icon",
     icon: <i className="devicon-react-original colored"></i>,
     tooltip: "React",
+  },
+  NextJS: {
+    alt: "NextJS Icon",
+    icon: <i className="devicon-nextjs-plain colored"></i>,
+    tooltip: "NextJS",
   },
   Redux: {
     alt: "Redux Icon",
@@ -161,6 +201,16 @@ export const LightModeCurrentIcons: Icons = {
     alt: "Github Icon",
     icon: <i className="devicon-github-plain colored"></i>,
     tooltip: "Github",
+  },
+  Figma: {
+    alt: "Figma Icon",
+    icon: <i className="devicon-figma-plain colored"></i>,
+    tooltip: "Figma",
+  },
+  Jira: {
+    alt: "Jira Icon",
+    icon: <i className="devicon-jira-plain colored"></i>,
+    tooltip: "Jira",
   },
 };
 

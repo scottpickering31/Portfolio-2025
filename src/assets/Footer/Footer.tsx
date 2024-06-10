@@ -7,44 +7,6 @@ function Footer() {
   return (
     <div className="container-fluid text-white">
       <div className="row text-center d-flex justify-content-center align-items-center bg-black p-3">
-        <div className="col-md-8 col-12 mb-4">
-          <form
-            action="mailto:scottpickering31@gmail.com"
-            target="_blank"
-            method="post"
-            encType="text/plain"
-            style={{ width: "100%", margin: "0 auto" }}
-          >
-            <div className="mb-3">
-              <label htmlFor="exampleFormControlInput1" className="form-label">
-                Email address
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div className="mb-3">
-              <label
-                htmlFor="exampleFormControlTextarea1"
-                className="form-label"
-              >
-                Message Content
-              </label>
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows={4}
-                name="body"
-              ></textarea>
-            </div>
-            <button type="submit" className="aboutMeBtn">
-              Send Email
-            </button>
-          </form>
-        </div>
         <div className="col-lg-4 col-12">
           <div className="col-12 justify-content-center align-items-center mb-3">
             <h1 className="mb-3">Contact Me</h1>
