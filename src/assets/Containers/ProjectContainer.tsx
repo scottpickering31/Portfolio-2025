@@ -107,7 +107,7 @@ const projectData = {
   projectFour: {
     h1title: null,
     description:
-      "A Pet Scheduling application for Groomers, Veterenarians, Boarding providers etc. for Pets, this is my first long-term software as a service project, due to complete by EOY 2024. Using Next.js for the landing page and SEO, and React for the application itself",
+      "A Pet Scheduling application for Groomers, Veterenarians, Boarding providers etc. for Pets, this is my first long-term software as a service project, due to complete by EOY 2025. Using Next.js for the landing page and SEO, and React for the application itself",
     technologyImages: [
       LightModeCurrentIcons.HTML5.icon,
       LightModeCurrentIcons.CSS3.icon,
@@ -125,13 +125,13 @@ const projectData = {
       LightModeCurrentIcons.TailwindCSS.tooltip,
     ],
     githubLink: "https://github.com/scottpickering31/petschedules-main-blog",
-    liveLink: "https://scottpickering31.github.io/Portfolio-2024/",
+    liveLink: "https://scottpickering31.github.io/Portfolio-2025/",
     readme:
       "https://github.com/scottpickering31/scottify-app/blob/main/README.md",
     iphone: PetScheduler,
     macbook: null,
     ipad: PetScheduler,
-    name: "Pet Scheduler - Coming Soon 2024 (source code available)",
+    name: "Pet Scheduler - Coming Soon 2025 (source code available)",
     id: 4,
   },
 };
