@@ -1,9 +1,9 @@
 
-# Portfolio 2024
+# Portfolio 2025
 
-![Portfolio-2024 Mockups](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/2d59ad31-34ce-4610-a791-b97480933cc9)
+![Portfolio-2025 Mockups](https://github.com/scottpickering31/Portfolio-2025/assets/97522229/2d59ad31-34ce-4610-a791-b97480933cc9)
 
-Welcome to my Portfolio 2024 project! This is a showcase of my skills and various projects created using Vite, React, TypeScript, Bootstrap, and Sass.
+Welcome to my Portfolio 2025 project! This is a showcase of my skills and various projects created using Vite, React, TypeScript, Bootstrap, and Sass.
 
 ## About
 
@@ -29,8 +29,8 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/Portfolio-2024.git
-cd Portfolio-2024
+git clone https://github.com/your-username/Portfolio-2025.git
+cd Portfolio-2025
 ```
 2. Install dependencies:
 ```bash
@@ -45,8 +45,8 @@ npm run dev
 
 ## Screenshots
 
-![Portfolio-Iphone-Mockup](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/82fe120c-cfa8-4896-8c25-6910cf9f34e0)
+![Portfolio-Iphone-Mockup](https://github.com/scottpickering31/Portfolio-2025/assets/97522229/82fe120c-cfa8-4896-8c25-6910cf9f34e0)
 
-![Portfolio-Ipad-Mockup](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/913a7e8d-2cae-4814-9e4b-3424ff3141cd)
+![Portfolio-Ipad-Mockup](https://github.com/scottpickering31/Portfolio-2025/assets/97522229/913a7e8d-2cae-4814-9e4b-3424ff3141cd)
 
-![Portfolio-Macbook-Mockup](https://github.com/scottpickering31/Portfolio-2024/assets/97522229/bfbb3bdc-5f42-41c2-ba93-2179ed2da5cd)
+![Portfolio-Macbook-Mockup](https://github.com/scottpickering31/Portfolio-2025/assets/97522229/bfbb3bdc-5f42-41c2-ba93-2179ed2da5cd)
