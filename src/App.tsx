@@ -22,7 +22,6 @@ function App() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
   return (
     <>
       <div>
