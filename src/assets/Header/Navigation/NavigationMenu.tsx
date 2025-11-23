@@ -1,7 +1,7 @@
 import Lottie from "react-lottie";
 import { useState } from "react";
-import nightAnimationData from "../../../../public/Lotties/NightToDayToggle.json";
-import dayAnimationData from "../../../../public/Lotties/DayToNightToggle.json";
+import nightAnimationData from "../../../Lotties/NightToDayToggle.json";
+import dayAnimationData from "../../../Lotties/DayToNightToggle.json";
 import "./NavigationMenu.scss";
 
 interface NavigationMenuProps {

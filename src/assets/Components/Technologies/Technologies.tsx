@@ -44,7 +44,7 @@ function Technologies({ darkMode }: TechnologiesProps) {
       <h1 className="mb-5 fs-1" style={{ color: darkMode ? "white" : "black" }}>
         Languages/Frameworks
       </h1>
-      <div className="row row-cols-3 row-cols-sm-3 row-cols-md-5 row-cols-lg-5 text-white px-4 mb-5">
+      <div className="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-4 text-white px-4 mb-5">
         {currentTechnologies}
       </div>
     </div>

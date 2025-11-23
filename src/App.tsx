@@ -4,7 +4,7 @@ import Header from "../src/assets/Header/Header";
 import Footer from "../src/assets/Footer/Footer";
 import Technologies from "./assets/Components/Technologies/Technologies";
 import ProjectContainer from "../src/assets/Containers/ProjectContainer";
-import TwinkleStars from "../public/Lotties/TwinkleStars.json";
+import TwinkleStars from "../src/Lotties/TwinkleStars.json";
 import { Element } from "react-scroll";
 
 function App() {

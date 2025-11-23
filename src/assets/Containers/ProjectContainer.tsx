@@ -1,14 +1,14 @@
 import ProjectCard from "../Components/Cards/ProjectCard";
-import EliteDrivesIphone from "../../../public/Images/Project-Images/EliteDrives-Iphone-Mockup.png";
-import EliteDrivesIpad from "../../../public/Images/Project-Images/EliteDrives-Ipad-Mockup.png";
-import EliteDrivesMacbook from "../../../public/Images/Project-Images/EliteDrives-Macbook-Mockup.png";
-import ScottifyIphone from "../../../public/Images/Project-Images/Scottify-Iphone-Mockup.png";
-import ScottifyIpad from "../../../public/Images/Project-Images/Scottify-Ipad-Mockup.png";
-import ScottifyMacbook from "../../../public/Images/Project-Images/Scottify-Macbook-Mockup.png";
-import PortfolioIphone from "../../../public/Images/Project-Images/Portfolio-Iphone-Mockup.png";
-import PortfolioIpad from "../../../public/Images/Project-Images/Portfolio-Ipad-Mockup.png";
-import PortfolioMacbook from "../../../public/Images/Project-Images/Portfolio-Macbook-Mockup.png";
-import PetScheduler from "../../../public/Images/Project-Images/PetScheduler.png";
+import EliteDrivesIphone from "/src/Images/Project-Images/EliteDrives-Iphone-Mockup.png";
+import EliteDrivesIpad from "/src/Images/Project-Images/EliteDrives-Ipad-Mockup.png";
+import EliteDrivesMacbook from "/src/Images/Project-Images/EliteDrives-Macbook-Mockup.png";
+import ScottifyIphone from "/src/Images/Project-Images/Scottify-Iphone-Mockup.png";
+import ScottifyIpad from "/src/Images/Project-Images/Scottify-Ipad-Mockup.png";
+import ScottifyMacbook from "/src/Images/Project-Images/Scottify-Macbook-Mockup.png";
+import PortfolioIphone from "/src/Images/Project-Images/Portfolio-Iphone-Mockup.png";
+import PortfolioIpad from "/src/Images/Project-Images/Portfolio-Ipad-Mockup.png";
+import PortfolioMacbook from "/src/Images/Project-Images/Portfolio-Macbook-Mockup.png";
+import PetScheduler from "/src/Images/Project-Images/PetScheduler.png";
 import {
   LightModeCurrentIcons,
   LightModeFutureIcons,

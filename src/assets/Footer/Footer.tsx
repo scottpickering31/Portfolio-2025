@@ -1,6 +1,6 @@
-import Github from "../../../public/Images/Logos/Github.png";
-import LinkedIn from "../../../public/Images/Logos/LinkedIn.png";
-import Twitter from "../../../public/Images/Logos/Twitter.png";
+import Github from "/src/Images/Logos/Github.png";
+import LinkedIn from "/src/Images/Logos/LinkedIn.png";
+import Twitter from "/src/Images/Logos/Twitter.png";
 import "../Components/Buttons/AboutMeButtons.scss";
 
 function Footer() {

@@ -19,25 +19,15 @@ export const DarkModeCurrentIcons: Icons = {
     icon: <i className="devicon-css3-plain"></i>,
     tooltip: "CSS3",
   },
-  JavaScript: {
-    alt: "JavaScript Icon",
+  Javascript: {
+    alt: "Javascript Icon",
     icon: <i className="devicon-javascript-plain"></i>,
-    tooltip: "JavaScript",
+    tooltip: "Javascript",
   },
   Typescript: {
     alt: "Typescript Icon",
     icon: <i className="devicon-typescript-plain"></i>,
     tooltip: "Typescript",
-  },
-  "C#": {
-    alt: "C# Icon",
-    icon: <i className="devicon-csharp-plain"></i>,
-    tooltip: "C#",
-  },
-  ".Net": {
-    alt: ".Net Icon",
-    icon: <i className="devicon-dot-net-plain-wordmark"></i>,
-    tooltip: ".Net",
   },
   React: {
     alt: "React Icon",
@@ -84,16 +74,6 @@ export const DarkModeCurrentIcons: Icons = {
     icon: <i className="devicon-tailwindcss-plain"></i>,
     tooltip: "TailwindCSS",
   },
-  Bootstrap: {
-    alt: "Bootstrap Icon",
-    icon: <i className="devicon-bootstrap-plain"></i>,
-    tooltip: "Bootstrap",
-  },
-  Sass: {
-    alt: "Sass Icon",
-    icon: <i className="devicon-sass-plain"></i>,
-    tooltip: "Sass",
-  },
   Github: {
     alt: "Github Icon",
     icon: <i className="devicon-github-plain"></i>,
@@ -104,10 +84,10 @@ export const DarkModeCurrentIcons: Icons = {
     icon: <i className="devicon-figma-plain"></i>,
     tooltip: "Figma",
   },
-  Jira: {
-    alt: "Jira Icon",
-    icon: <i className="devicon-jira-plain"></i>,
-    tooltip: "Jira",
+  AWS: {
+    alt: "AWS Icon",
+    icon: <i className="devicon-amazonwebservices-plain"></i>,
+    tooltip: "AWS",
   },
 };
 
@@ -131,16 +111,6 @@ export const LightModeCurrentIcons: Icons = {
     alt: "Typescript Icon",
     icon: <i className="devicon-typescript-plain colored"></i>,
     tooltip: "Typescript",
-  },
-  "C#": {
-    alt: "C# Icon",
-    icon: <i className="devicon-csharp-plain colored"></i>,
-    tooltip: "C#",
-  },
-  ".Net": {
-    alt: ".Net Icon",
-    icon: <i className="devicon-dot-net-plain-wordmark colored"></i>,
-    tooltip: ".Net",
   },
   React: {
     alt: "React Icon",
@@ -187,16 +157,6 @@ export const LightModeCurrentIcons: Icons = {
     icon: <i className="devicon-tailwindcss-plain colored"></i>,
     tooltip: "TailwindCSS",
   },
-  Bootstrap: {
-    alt: "Bootstrap Icon",
-    icon: <i className="devicon-bootstrap-plain colored"></i>,
-    tooltip: "Bootstrap",
-  },
-  Sass: {
-    alt: "Sass Icon",
-    icon: <i className="devicon-sass-plain colored"></i>,
-    tooltip: "Sass",
-  },
   Github: {
     alt: "Github Icon",
     icon: <i className="devicon-github-plain colored"></i>,
@@ -207,10 +167,10 @@ export const LightModeCurrentIcons: Icons = {
     icon: <i className="devicon-figma-plain colored"></i>,
     tooltip: "Figma",
   },
-  Jira: {
-    alt: "Jira Icon",
-    icon: <i className="devicon-jira-plain colored"></i>,
-    tooltip: "Jira",
+  AWS: {
+    alt: "AWS Icon",
+    icon: <i className="devicon-amazonwebservices-plain colored"></i>,
+    tooltip: "AWS",
   },
 };
 
