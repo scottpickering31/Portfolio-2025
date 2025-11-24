@@ -5,14 +5,8 @@ import EliteDrivesMacbook from "/src/Images/Project-Images/EliteDrives-Macbook-M
 import ScottifyIphone from "/src/Images/Project-Images/Scottify-Iphone-Mockup.png";
 import ScottifyIpad from "/src/Images/Project-Images/Scottify-Ipad-Mockup.png";
 import ScottifyMacbook from "/src/Images/Project-Images/Scottify-Macbook-Mockup.png";
-import PortfolioIphone from "/src/Images/Project-Images/Portfolio-Iphone-Mockup.png";
-import PortfolioIpad from "/src/Images/Project-Images/Portfolio-Ipad-Mockup.png";
-import PortfolioMacbook from "/src/Images/Project-Images/Portfolio-Macbook-Mockup.png";
-import PetScheduler from "/src/Images/Project-Images/PetScheduler.png";
-import {
-  LightModeCurrentIcons,
-  LightModeFutureIcons,
-} from "../Data/DarkModeIconData";
+import MarketTaxProIphone from "/src/Images/Project-Images/MarketTaxPro-Iphone-Mockup.png";
+import { LightModeCurrentIcons } from "../Data/DarkModeIconData";
 import "./ProjectContainer.scss";
 interface Project {
   darkMode: boolean;
@@ -22,7 +16,7 @@ const projectData = {
   projectOne: {
     h1title: "Projects",
     description:
-      "Worldwide live-data weather App, utilizing rapidAPI data, created using React/Redux/Typescript/Tailwind",
+      "Full-stack SaaS for UK marketplace sellers - Designed and built a full-stack bookkeeping and tax-prep application for Etsy/eBay sellers using Next.js, TypeScript, Supabase and Stripe. Implemented marketplace integrations, data imports, profit calculations, PDF/CSV exports, usage-based billing and a secure multi-tenant architecture. Delivered complete CI/CD pipelines and robust REST API routes following industry standards",
     technologyImages: [
       LightModeCurrentIcons.HTML5.icon,
       LightModeCurrentIcons.CSS3.icon,
@@ -39,13 +33,14 @@ const projectData = {
       LightModeCurrentIcons.Redux.tooltip,
       LightModeCurrentIcons.TailwindCSS.tooltip,
     ],
-    githubLink: "https://github.com/scottpickering31/weatherful",
-    liveLink: "https://scottpickering31.github.io/weatherful",
-    readme: "https://github.com/scottpickering31/weatherful/blob/master/readme",
-    iphone: PortfolioIphone,
-    macbook: PortfolioMacbook,
-    ipad: PortfolioIpad,
-    name: "Weatherful",
+    githubLink: "https://github.com/scottpickering31/markettaxpro/",
+    liveLink: "https://markettaxpro.com",
+    readme:
+      "https://github.com/scottpickering31/markettaxpro/blob/main/README.md",
+    iphone: MarketTaxProIphone,
+    macbook: "",
+    ipad: "",
+    name: "MarketTaxPro",
     id: 1,
   },
   projectTwo: {
@@ -104,36 +99,6 @@ const projectData = {
     name: "Scottify",
     id: 3,
   },
-  projectFour: {
-    h1title: null,
-    description:
-      "A Pet Scheduling application for Groomers, Veterenarians, Boarding providers etc. for Pets, this is my first long-term software as a service project, due to complete by EOY 2025. Using Next.js for the landing page and SEO, and React for the application itself",
-    technologyImages: [
-      LightModeCurrentIcons.HTML5.icon,
-      LightModeCurrentIcons.CSS3.icon,
-      LightModeCurrentIcons.Typescript.icon,
-      LightModeCurrentIcons.React.icon,
-      LightModeFutureIcons.Next.icon,
-      LightModeCurrentIcons.TailwindCSS.icon,
-    ],
-    technologyToolTips: [
-      LightModeCurrentIcons.HTML5.tooltip,
-      LightModeCurrentIcons.CSS3.tooltip,
-      LightModeCurrentIcons.Typescript.tooltip,
-      LightModeCurrentIcons.React.tooltip,
-      LightModeFutureIcons.Next.tooltip,
-      LightModeCurrentIcons.TailwindCSS.tooltip,
-    ],
-    githubLink: "https://github.com/scottpickering31/petschedules-main-blog",
-    liveLink: "https://scottpickering31.github.io/Portfolio-2025/",
-    readme:
-      "https://github.com/scottpickering31/scottify-app/blob/main/README.md",
-    iphone: PetScheduler,
-    macbook: null,
-    ipad: PetScheduler,
-    name: "Pet Scheduler - Coming Soon 2025 (source code available)",
-    id: 4,
-  },
 };
 
 function ProjectContainer({ darkMode }: Project) {
@@ -144,8 +109,6 @@ function ProjectContainer({ darkMode }: Project) {
       <ProjectCard darkMode={darkMode} projectData={projectData.projectTwo} />
       <hr />
       <ProjectCard darkMode={darkMode} projectData={projectData.projectThree} />
-      <hr />
-      <ProjectCard darkMode={darkMode} projectData={projectData.projectFour} />
     </div>
   );
 }
