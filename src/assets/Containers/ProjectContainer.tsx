@@ -6,6 +6,8 @@ import ScottifyIphone from "/src/Images/Project-Images/Scottify-Iphone-Mockup.pn
 import ScottifyIpad from "/src/Images/Project-Images/Scottify-Ipad-Mockup.png";
 import ScottifyMacbook from "/src/Images/Project-Images/Scottify-Macbook-Mockup.png";
 import MarketTaxProIphone from "/src/Images/Project-Images/MarketTaxPro-Iphone-Mockup.png";
+import MarketTaxProIpad from "/src/Images/Project-Images/MarketTaxPro-Ipad-Mockup.png";
+import MarketTaxProMacbook from "/src/Images/Project-Images/MarketTaxPro-Macbook-Mockup.png";
 import { LightModeCurrentIcons } from "../Data/DarkModeIconData";
 import "./ProjectContainer.scss";
 interface Project {
@@ -38,8 +40,8 @@ const projectData = {
     readme:
       "https://github.com/scottpickering31/markettaxpro/blob/main/README.md",
     iphone: MarketTaxProIphone,
-    macbook: "",
-    ipad: "",
+    macbook: MarketTaxProMacbook,
+    ipad: MarketTaxProIpad,
     name: "MarketTaxPro",
     id: 1,
   },
